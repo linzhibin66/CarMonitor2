@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_list.xml",
+        "source": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_list.xml"
+    },
+    {
+        "merged": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\base_container.xml",
+        "source": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\bundles\\debug\\res\\layout\\base_container.xml"
+    },
+    {
+        "merged": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_grid.xml",
+        "source": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_grid.xml"
+    },
+    {
+        "merged": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_view.xml",
+        "source": "E:\\workspace2\\CarMonitor2\\dialogplus\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_view.xml"
+    }
+]

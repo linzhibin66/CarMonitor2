@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_list_item_title_h"
+        android:background="@color/offline_item_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/magin_10"
+        android:textSize="@dimen/offline_list_item_title_textsize"
+        android:textColor="@color/black"
+        android:text="@string/current_city"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/current_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/offline_list_item_h"
+            android:gravity="center"
+            android:textSize="@dimen/offline_list_item_textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="定位中......"
+            />
+
+        <ImageView
+            android:id="@+id/current_download_status"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/btn_download"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/magin_7"
+            android:scaleType="center"
+            />
+        <TextView
+            android:id="@+id/current_download_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/current_download_status"
+            android:layout_marginRight="@dimen/magin_10"
+            android:textSize="@dimen/offline_list_item_size_textsize"
+            android:text="30.2M"
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_list_item_title_h"
+        android:background="@color/offline_item_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/magin_10"
+        android:textSize="@dimen/offline_list_item_title_textsize"
+        android:textColor="@color/black"
+        android:text="@string/nostras_city"
+        />
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:carinfo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/carinfo_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <ScrollView
+            android:id="@+id/carinfo_scrollview"
+            android:layout_below="@id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carinfo_layout_bg"
+            >
+
+            <LinearLayout
+                android:id="@+id/carinfo_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/magin_5"
+                android:orientation="vertical">
+
+                <com.easyder.carmonitor.widget.CarInfoItem
+                    android:id="@+id/carinfo_platenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    carinfo:carinfo_icon="@mipmap/carinfo_carnumber"
+                    carinfo:carinfo_has_line="false"
+                    carinfo:carinfo_attribute="@string/carinfo_platenumber"
+                    />
+
+                <com.easyder.carmonitor.widget.CarInfoItem
+                    android:id="@+id/carcost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    carinfo:carinfo_icon="@mipmap/icon_fee"
+                    carinfo:carinfo_has_line="false"
+                    carinfo:carinfo_attribute="@string/car_cost"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_more"
+                        carinfo:carinfo_attribute="@string/carinfo_status"
+                        carinfo:carinfo_has_arrows="true"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_alarms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_warn_sign"
+                        carinfo:carinfo_attribute="@string/carinfo_alarms"
+                        carinfo:carinfo_has_arrows="false"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_positioning"
+                        carinfo:carinfo_attribute="@string/carinfo_time"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_speed"
+                        carinfo:carinfo_attribute="@string/carinfo_speed"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_direction"
+                        carinfo:carinfo_attribute="@string/carinfo_orientation"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_elevation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_altitude"
+                        carinfo:carinfo_attribute="@string/carinfo_elevation"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/icon_carinfo_mileage"
+                        carinfo:carinfo_attribute="@string/carinfo_mileage"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_adress"
+                        carinfo:carinfo_attribute="@string/carinfo_adress"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_install_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_installation_time"
+                        carinfo:carinfo_attribute="@string/carinfo_install_time"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_pay_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_pay_time"
+                        carinfo:carinfo_attribute="@string/carinfo_pay_time"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_validity_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_date"
+                        carinfo:carinfo_attribute="@string/carinfo_validity_time"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_company"
+                        carinfo:carinfo_attribute="@string/carinfo_company_name"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_group_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_grouping"
+                        carinfo:carinfo_attribute="@string/carinfo_group_name"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_contact"
+                        carinfo:carinfo_attribute="@string/carinfo_contact"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/carinfo_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/carinfo_number"
+                        carinfo:carinfo_attribute="@string/carinfo_phone"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carinfo_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/carinfo_content_layout"
+        >
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

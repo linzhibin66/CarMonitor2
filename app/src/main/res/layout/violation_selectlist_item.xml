@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/alarm_log_select_item_h">
+
+        <TextView
+            android:id="@+id/item_violation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alarm_log_select_item_h"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/allcarlist_item_paltenumber_textsize"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:text="停驶"/>
+
+
+
+        <CheckBox
+            android:id="@+id/check_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alarm_log_select_item_h"
+            android:button="@drawable/allcar_checkbox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/magin_19"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"
+            />
+
+</RelativeLayout>

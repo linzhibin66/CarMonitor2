@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:id="@+id/settings_content_layout"
+            android:layout_width="@dimen/dialog_w"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_bg"
+            >
+
+            <include
+                android:id="@+id/title_layout"
+                layout="@layout/base_title_layout"
+                />
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_layout"
+                android:fillViewport="true"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/faq_bg"
+                android:paddingBottom="@dimen/magin_20"
+                >
+
+            <RelativeLayout
+                android:id="@+id/car_refresh_settings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_h"
+                android:layout_marginTop="@dimen/magin_10"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_refresh_settings"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/settings_base_item_color"
+                    android:drawableLeft="@mipmap/car_refresh_setting_icon"
+                    android:drawablePadding="@dimen/magin_15"
+                    />
+
+                <TextView
+                    android:id="@+id/car_refresh_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/magin_20"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_next"
+                    android:paddingRight="@dimen/magin_16"
+                    android:drawablePadding="@dimen/magin_11"
+                    android:textColor="@color/settings_item_text_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="30秒"
+                    />
+
+            </RelativeLayout>
+
+          <!--  <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                />-->
+
+            <RelativeLayout
+                android:id="@+id/road_refresh_settings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_h"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/road_refresh_settings"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/road_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/magin_20"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_next"
+                    android:paddingRight="@dimen/magin_16"
+                    android:drawablePadding="@dimen/magin_11"
+                    android:textColor="@color/settings_item_text_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="3分钟"
+                    />
+
+            </RelativeLayout>
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                android:visibility="gone"
+                />-->
+
+
+            <TextView
+                android:id="@+id/offline_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_h"
+                android:text="@string/offline_map"
+                android:paddingLeft="@dimen/magin_20"
+                android:layout_marginTop="@dimen/magin_10"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_next"
+                android:paddingRight="@dimen/magin_16"
+                android:background="@color/white"
+                android:textColor="@color/settings_base_item_color"
+                android:drawableLeft="@mipmap/offline_map"
+                android:drawablePadding="@dimen/magin_15"
+                />
+          <!--  <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                />-->
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_h"
+                android:text="@string/about_us"
+                android:paddingLeft="@dimen/magin_20"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_next"
+                android:paddingRight="@dimen/magin_16"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/magin_10"
+                android:textColor="@color/settings_base_item_color"
+                android:drawableLeft="@mipmap/about_us_settings_icon"
+                android:drawablePadding="@dimen/magin_15"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_h"
+                android:text="@string/share"
+                android:paddingLeft="@dimen/magin_20"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_next"
+                android:paddingRight="@dimen/magin_16"
+                android:background="@color/white"
+                android:textColor="@color/settings_base_item_color"
+                android:drawableLeft="@mipmap/share_settings_icon"
+                android:drawablePadding="@dimen/magin_15"
+                />
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                />-->
+
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_buttom_h"
+                android:text="@string/logout"
+                android:layout_marginTop="@dimen/magin_20"
+                android:background="@color/white"
+                android:textSize="@dimen/settings_loginout_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/loginout_text_color"
+                />
+<!--                android:background="@drawable/settings_logout_bg"-->
+
+            </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/settings_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

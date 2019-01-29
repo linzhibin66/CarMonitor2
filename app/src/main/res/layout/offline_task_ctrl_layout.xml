@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/offline_task_content"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        >
+    <TextView
+        android:id="@+id/offline_task_city_name_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/citylist_task_ctrl_title_h"
+        android:text="北京市"
+        android:gravity="center"
+        android:textSize="@dimen/citylist_task_ctrl_title_textsize"
+        android:textColor="@color/offline_line_task_ctrl_title_textcolor"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"
+        />
+    <TextView
+        android:id="@+id/offline_task_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/citylist_task_ctrl_item_h"
+        android:text="暂停下载"
+        android:gravity="center"
+        android:textSize="@dimen/citylist_task_ctrl_item_textsize"
+        android:textColor="@color/offline_line_task_ctrl_textcolor"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/offline_task_ctrl_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/offline_task_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/citylist_task_ctrl_item_h"
+        android:text="删除"
+        android:gravity="center"
+        android:textSize="@dimen/citylist_task_ctrl_item_textsize"
+        android:textColor="@color/offline_line_task_ctrl_delete_textcolor"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"
+        />
+    <TextView
+        android:id="@+id/offline_task_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/citylist_task_ctrl_item_h"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="@dimen/citylist_task_ctrl_item_textsize"
+        android:textColor="@color/offline_line_task_ctrl_cancel_textcolor"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="@color/allcar_bg_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_navigation_bar_h2"
+        android:layout_below="@id/title_layout"
+        android:background="@color/allcar_button_bg_color"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_navigation_bar_h"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            android:layout_alignParentBottom="true"
+            />
+
+        <View
+            android:id="@+id/status_bar_view"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@drawable/allcar_status_line_bg"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allcar_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_search_layout_h"
+        android:layout_marginLeft="@dimen/magin_14"
+        android:layout_marginRight="@dimen/magin_14"
+        android:background="@drawable/allcar_search_bg"
+        android:layout_marginTop="@dimen/magin_5"
+        android:layout_marginBottom="@dimen/magin_3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/navigation_bar_layout"
+
+        >
+
+        <ImageView
+            android:id="@+id/allcar_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_allcar_search"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_13"
+            />
+
+        <EditText
+            android:id="@+id/allcar_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@id/allcar_search_icon"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:hint="@string/search_layout_hint"
+            android:textSize="@dimen/allcar_search_text_size"
+            android:textColorHint="@color/allcar_search_text_hint_color"
+            android:textColor="@color/black"
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+    android:id="@+id/allcarlist_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/allcar_search_layout"
+
+        >
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

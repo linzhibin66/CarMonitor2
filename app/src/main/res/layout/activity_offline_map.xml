@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/offline_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_h"
+        >
+
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/title_back_img_wh"
+            android:layout_height="@dimen/title_back_img_wh"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:background="@null"
+            android:scaleType="center"
+            />
+
+        <RadioGroup
+            android:id="@+id/offline_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+
+            <RadioButton
+                android:id="@+id/offline_title_download_manage"
+                android:layout_width="@dimen/offline_ctrl_w"
+                android:layout_height="@dimen/offline_ctrl_h"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:text="@string/download_manager"
+                android:textColor="@color/select_title_text_color"
+                android:background="@drawable/offline_radio_btn_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/offline_title_map"
+                android:layout_width="@dimen/offline_ctrl_w"
+                android:layout_height="@dimen/offline_ctrl_h"
+                android:gravity="center"
+                android:text="@string/city_list"
+                android:button="@null"
+                android:textColor="@color/white"
+                android:background="@drawable/offline_radio_btn_selector_n"
+                />
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/offline_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/offline_title_layout"
+        android:background="@color/offline_item_title_bg"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

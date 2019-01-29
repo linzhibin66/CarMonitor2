@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.shinetech.mvp.DB.greendao'
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile files('libs/BaiduLBS_Android.jar')
+    //compile project(':dialogplus')
+    compile files('libs/open_sdk_r5788_lite.jar')
+    compile files('libs/Baidu_Mtj_3.7.6.1.jar')
+    compile 'org.greenrobot:greendao:3.2.2'
+    // add library of DB
+    // This is only needed if you want to use encrypted databases
+    compile 'net.zetetic:android-database-sqlcipher:3.5.6'
+    compile files('libs/baidumapapi_base_v4_3_1.jar')
+    compile 'cz.msebera.android:httpclient:4.4.1.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

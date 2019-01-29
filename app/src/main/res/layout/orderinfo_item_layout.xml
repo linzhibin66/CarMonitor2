@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/filed_name"
+        android:layout_width="@dimen/maintenance_order_info_content_title_w"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/magin_15"
+        android:layout_marginTop="@dimen/magin_10"
+        android:textSize="@dimen/maintenance_order_info_content_text_size"
+        android:textColor="@color/maintenance_order_info_result_title_text_color"
+        android:text="车牌"
+        />
+
+    <TextView
+        android:id="@+id/filed_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/filed_name"
+        android:layout_marginTop="@dimen/magin_10"
+        android:textSize="@dimen/maintenance_order_info_content_text_size"
+        android:textColor="@color/maintenance_order_info_result_text_color"
+        android:text="蓝 粤S22222"
+        />
+
+</RelativeLayout>

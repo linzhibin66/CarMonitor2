@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/magin_15"
+    android:paddingBottom="@dimen/magin_15">
+
+        <TextView
+            android:id="@+id/maintenance_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="维修单号："
+            />
+
+        <TextView
+            android:id="@+id/maintenance_order_number_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_order_number"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="112252512365"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_commit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_order_number"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="提交时间："
+            />
+
+        <TextView
+            android:id="@+id/maintenance_commit_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_commit_time"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_order_number"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="2017-11-8 12：50"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_commit_time"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="结束时间："
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_end_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_end_time"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_commit_time"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="2017-11-20 13:50"
+            android:visibility="gone"
+            />
+
+</RelativeLayout>

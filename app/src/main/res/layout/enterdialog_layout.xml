@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/enter_ctrl_layout"
+        android:layout_width="@dimen/creat_maintenance_order_enter_layout_w"
+        android:layout_height="@dimen/creat_maintenance_order_enter_layout_h"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/valuation_result_layout_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/enter_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/creat_maintenance_order_enter_title_textsize"
+            android:textColor="@color/black"
+            android:text="@string/creat_maintenance_enter_commit"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/enter_title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_title_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/magin_15"
+            android:textSize="@dimen/creat_maintenance_order_enter_title_hint_textsize"
+            android:text="@string/creat_maintenance_enter_commit_hint"
+            />
+
+        <LinearLayout
+            android:id="@+id/enter_ctrl_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/creat_maintenance_order_enter_ctrl_layout_h"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/enter_ctrl_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/creat_maintenance_order_enter_ctrl_text_size"
+                android:text="@string/cancel"
+                android:background="@null"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/creat_maintenance_enter_ctrl_color"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base_line_color"/>
+
+            <Button
+                android:id="@+id/enter_ctrl_enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/creat_maintenance_order_enter_ctrl_text_size"
+                android:text="@string/enter"
+                android:background="@null"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/creat_maintenance_enter_ctrl_color"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_line_color"
+            android:layout_above="@id/enter_ctrl_layout_bottom"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/enter_to_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_operation_loading"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

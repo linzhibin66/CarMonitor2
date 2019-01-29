@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/creat_maintenance_order_success_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:fillViewport="true"
+            >
+
+             <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/faq_bg"
+
+            >
+
+            <ImageView
+                android:id="@+id/success_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/order_success_icon"
+                android:scaleType="center"
+                android:layout_marginTop="@dimen/magin_36"
+                />
+
+            <TextView
+                android:id="@+id/commit_success_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/creat_maintenance_commit_success"
+                android:layout_below="@id/success_icon"
+                android:layout_marginTop="@dimen/magin_20"
+                android:textStyle="bold"
+                android:textSize="@dimen/creat_maintenance_order_commit_success_text_size"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/success_hint_ordernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commit_success_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/magin_23"
+                android:text="您的报修单号为：GDH123456789\n请耐心等待，客服会尽快联系您。"
+                android:textColor="@color/creat_maintenance_commit_success_hint_color"
+
+                />
+            <!--<TextView
+                android:id="@+id/success_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/success_hint_ordernumber"
+                android:layout_centerHorizontal="true"
+                android:text="请耐心等待，客服会尽快联系您。"
+
+                />-->
+
+            <RelativeLayout
+                android:id="@+id/show_order_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/creat_maintenance_order_show_order_list_h"
+                android:layout_below="@id/success_hint_ordernumber"
+                android:layout_marginTop="@dimen/magin_24"
+                android:layout_marginLeft="@dimen/magin_28"
+                android:layout_marginRight="@dimen/magin_28"
+                android:background="@drawable/commit_success_show_list_bg"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/creat_maintenance_commit_success_showlist_color"
+                    android:text="@string/creat_maintenance_commit_success_showlist"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/commit_success_show_list_icon"
+                    android:drawablePadding="@dimen/magin_10"
+                    android:textSize="@dimen/creat_maintenance_order_show_order_list_textsize"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/creat_maintenance_order_success_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/creat_maintenance_order_success_content_layout"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>

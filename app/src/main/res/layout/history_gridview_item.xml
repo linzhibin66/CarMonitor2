@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/item_car_platenumber"
+        android:layout_width="@dimen/search_history_girdview_item_w"
+        android:layout_height="@dimen/search_history_girdview_item_h"
+        android:gravity="center"
+        android:textColor="@color/search_layout_hstory_text_color"
+        android:textSize="@dimen/allcarlist_item_paltenumber_textsize"
+        android:layout_margin="@dimen/magin_3"
+        android:background="@drawable/history_gridview_item_bg"
+        android:text="蓝 粤S222222"/>
+
+
+</RelativeLayout>

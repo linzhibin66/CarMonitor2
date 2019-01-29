@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    
+    <RelativeLayout
+        android:id="@+id/attribute_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/marker_content_bg"
+        >
+    
+        <TextView
+            android:id="@+id/compact_start"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_start_time"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/marker_time"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <TextView
+            android:id="@+id/compact_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:layout_toRightOf="@id/compact_start"
+            android:gravity="center_vertical"
+            android:text="2017-4-12 12:12"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/compact_start"
+            android:layout_marginLeft="@dimen/magin_46"
+            />
+
+        <TextView
+            android:id="@+id/compact_end"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_end_time"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/marker_time"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_below="@id/line_1"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <TextView
+            android:id="@+id/compact_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:layout_toRightOf="@id/compact_start"
+            android:gravity="center_vertical"
+            android:text="2017-4-12 12:12"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:layout_below="@id/line_1"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/compact_end"
+            android:layout_marginLeft="@dimen/magin_46"
+            />
+
+        <LinearLayout
+            android:id="@+id/compact_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line_2"
+            android:visibility="gone"
+            >
+
+        <TextView
+            android:id="@+id/compact_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_type"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/marker_type"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <TextView
+            android:id="@+id/compact_type_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:layout_toRightOf="@id/compact_start"
+            android:gravity="center_vertical"
+            android:text="全部"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/compact_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/compact_marker_alarm_item_h"
+        android:layout_below="@id/attribute_layout"
+        android:text="@string/alarm_title"
+        android:layout_marginLeft="@dimen/magin_5"
+        android:layout_marginRight="@dimen/magin_5"
+        android:layout_marginTop="@dimen/magin_3"
+        android:layout_marginBottom="@dimen/magin_3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/compact_marker_buttom_text_size"
+        android:background="@mipmap/marker_dialog_commit_bg"
+        />
+       <!-- android:background="@drawable/marker_dialog_commit_bg"-->
+
+</RelativeLayout>

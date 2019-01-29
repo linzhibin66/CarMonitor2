@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_bg"
+    >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title_layout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/faq_bg"
+        android:layout_below="@id/title_layout"
+        >
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/track_bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+        </com.baidu.mapapi.map.MapView>
+
+        <RelativeLayout
+            android:id="@+id/carinfo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+
+            android:paddingTop="@dimen/magin_10"
+            android:background="@drawable/marker_content_bg"
+            >
+
+            <LinearLayout
+                android:id="@+id/track_platenumber_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/magin_5"
+                android:layout_marginLeft="@dimen/magin_15"
+                >
+
+            <TextView
+                android:id="@+id/track_platenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marker_text_h"
+                android:textSize="@dimen/marker_platenumber_textsize"
+                android:textColor="@color/plate_number_textcolor"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="蓝 粤S22222"
+                android:drawablePadding="@dimen/magin_16"
+                />
+
+            <TextView
+                android:id="@+id/track_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@id/track_platenumber"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:textSize="@dimen/marker_speed_textsize"
+                android:textColor="@color/marker_speed_textcolor"
+                android:textStyle="bold"
+                android:text="32km/h"
+                android:background="@mipmap/track_log_info_speed_bg"
+                />
+               <!--
+               android:paddingLeft="@dimen/magin_7"
+                android:paddingRight="@dimen/magin_7"
+                android:paddingBottom="1.5dp"
+                android:paddingTop="1.5dp"
+                android:background="@drawable/marker_speed_bg"
+                -->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/track_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marker_address_textcolor"
+                android:textSize="@dimen/marker_address_textsize"
+                android:layout_below="@id/track_platenumber_layout"
+                android:layout_marginTop="@dimen/magin_7"
+                android:layout_marginLeft="@dimen/magin_15"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:drawablePadding="@dimen/magin_16"
+                />
+<!--                android:text="广东省东莞市东城区东城大道东200米"-->
+<!--
+                android:drawableLeft="@mipmap/marker_adress_icon"
+-->
+            <TextView
+                android:id="@+id/track_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marker_time_textcolor"
+                android:textSize="@dimen/marker_time_textsize"
+                android:layout_marginTop="@dimen/magin_7"
+                android:layout_below="@id/track_address"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="2016-12-12 12:12:20"
+                android:drawablePadding="@dimen/magin_16"
+                android:layout_marginLeft="@dimen/magin_15"
+                android:layout_marginBottom="@dimen/magin_11"
+                />
+
+
+                <!--android:text="2016-12-12 12:12:20"-->
+         <!--       android:drawableLeft="@mipmap/marker_location_time"-->
+
+            <TextView
+                android:id="@+id/track_total_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marker_total_mileage_textcolor"
+                android:textSize="@dimen/marker_time_textsize"
+                android:layout_marginTop="@dimen/magin_7"
+                android:layout_below="@id/track_address"
+                android:layout_toRightOf="@id/track_time"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:drawablePadding="@dimen/magin_16"
+                android:layout_marginLeft="@dimen/magin_15"
+                android:layout_marginBottom="@dimen/magin_11"
+                />
+
+            <!--  android:text="@string/track_total_mileage_str"  -->
+
+            <View
+                android:id="@+id/track_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/base_line_color"
+                android:layout_below="@id/track_time"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttom_ctrl_play_h"
+                android:layout_below="@id/track_line_view"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageButton
+                    android:id="@+id/track_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:layout_marginLeft="@dimen/magin_10"
+                    android:src="@mipmap/btn_play"
+                    android:background="@null"
+                    />
+
+                <SeekBar
+                    android:id="@+id/track_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="100"
+                    android:progressDrawable="@drawable/track_seekbar"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:thumb="@mipmap/btn_control"
+                    android:splitTrack="false"
+                    android:max="100"
+                    android:progress="0"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/track_play_speed_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/track_play_speed_ctrl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/magin_5"
+                        android:src="@mipmap/icon_speed"
+                        android:background="@null"
+                        />
+
+                    <TextView
+                        android:id="@+id/track_play_speed_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toRightOf="@id/track_play_speed_ctrl"
+                        android:textSize="@dimen/marker_time_textsize"
+                        android:textColor="@color/track_play_speed_text_color"
+                        android:layout_marginLeft="@dimen/magin_5"
+                        android:layout_marginRight="@dimen/magin_15"
+                        android:text="@string/track_play_speed_middle"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hint_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/magin_28"
+            android:layout_marginLeft="@dimen/magin_28"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+            <ProgressBar
+                android:id="@+id/hint_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_hint_text"
+                android:layout_toRightOf="@id/hint_progressbar"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

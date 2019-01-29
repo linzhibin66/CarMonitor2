@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/allcarlist_item_wh">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_item_wh"
+        android:paddingLeft="@dimen/magin_20"
+        >
+
+
+        <ImageView
+            android:id="@+id/item_car_icon"
+            android:layout_width="@dimen/allcarlist_item_img_wh"
+            android:layout_height="@dimen/allcarlist_item_img_wh"
+            android:src="@mipmap/icon_allcar_car"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_5"
+            />
+        <ImageView
+            android:id="@+id/item_car_icon_status"
+            android:layout_width="@dimen/allcarlist_item_img_status_wh"
+            android:layout_height="@dimen/allcarlist_item_img_status_wh"
+            android:background="@mipmap/icon_warn"
+            android:layout_alignBottom="@id/item_car_icon"
+            android:layout_alignEnd="@id/item_car_icon"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/item_car_platenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/item_paltenumber"
+            android:textSize="@dimen/allcarlist_item_paltenumber_textsize"
+            android:layout_toRightOf="@id/item_car_icon"
+            android:layout_marginLeft="@dimen/magin_11"
+            android:text="蓝 粤S222222"/>
+
+        <TextView
+            android:id="@+id/item_car_acc_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/allcarlist_item_status_textsize"
+            android:layout_toRightOf="@id/item_car_platenumber"
+            android:layout_marginLeft="@dimen/magin_10"
+            android:textColor="@color/white"
+            />
+           <!-- android:text="行驶"
+            android:paddingLeft="@dimen/magin_7"
+            android:paddingRight="@dimen/magin_7"
+            android:paddingTop="@dimen/magin_3"
+            android:paddingBottom="@dimen/magin_3"
+            android:background="@drawable/acc_run_bg"-->
+
+        <TextView
+            android:id="@+id/item_car_alarm_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/allcarlist_item_status_textsize"
+            android:layout_toRightOf="@id/item_car_acc_status"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:textColor="@color/white"
+            android:background="@mipmap/icon_warn_status"
+            android:visibility="gone"
+            />
+            <!--
+            android:background="@drawable/acc_alarm_bg"
+            android:paddingLeft="@dimen/magin_7"
+            android:paddingRight="@dimen/magin_7"
+            android:paddingTop="@dimen/magin_3"
+            android:paddingBottom="@dimen/magin_3"
+            android:text="报警"
+            -->
+
+        <TextView
+            android:id="@+id/item_car_exception_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/allcarlist_item_status_textsize"
+            android:layout_toRightOf="@id/item_car_alarm_status"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@mipmap/icon_wrong"
+            />
+           <!-- android:text="异常"
+            android:paddingLeft="@dimen/magin_7"
+            android:paddingRight="@dimen/magin_7"
+            android:paddingTop="@dimen/magin_3"
+            android:paddingBottom="@dimen/magin_3"
+            android:background="@drawable/acc_exception_bg"-->
+
+
+       <ImageView
+           android:id="@+id/classify_carlist_arrows"
+            android:layout_width="23dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/magin_20"
+            android:scaleType="center"
+            android:src="@mipmap/icon_next"
+            android:visibility="gone"
+            />
+        
+        <RelativeLayout
+            android:id="@+id/check_layout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <CheckBox
+                android:id="@+id/check_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/allcar_checkbox"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/magin_19"
+                android:focusable="false"
+                android:clickable="false"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

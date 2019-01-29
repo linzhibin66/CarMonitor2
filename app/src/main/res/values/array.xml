@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="platenumber_color">
+        <item>蓝</item>
+        <item>黄</item>
+        <item>白</item>
+        <item>黑</item>
+    </array>
+
+    <array name="settings_items_user">
+        <item>使用指南</item>
+        <item>常见问题</item>
+        <item>意见反馈</item>
+        <item>系统消息</item>
+        <item>终端报修</item>
+        <item>设置</item>
+    </array>
+
+    <array name="settings_items">
+        <item>使用指南</item>
+        <item>常见问题</item>
+        <item>意见反馈</item>
+        <item>系统消息</item>
+        <item>装维管理</item>
+        <item>设置</item>
+    </array>
+
+    <array name="allcarlist_item">
+        <item>全部(%1$s)</item>
+        <item>行驶(%1$s)</item>
+        <item>停驶(%1$s)</item>
+        <item>预警(%1$s)</item>
+        <item>异常(%1$s)</item>
+    </array>
+
+    <array name="allcarlist_item_title">
+        <item>全部</item>
+        <item>行驶</item>
+        <item>停驶</item>
+        <item>预警</item>
+        <item>异常</item>
+    </array>
+
+    <array name="orderlist_item_title">
+        <item>已提交</item>
+        <item>处理中</item>
+        <item>已结束</item>
+    </array>
+
+    <array name="base_order_status_list">
+        <item>流程中</item>
+        <item>结束</item>
+        <item>未提交</item>
+    </array>
+
+    <array name="ctrl_orderlist_item_title">
+        <item>待接单</item>
+        <item>已接单</item>
+        <item>已结束</item>
+    </array>
+
+    <array name="order_type_item_title">
+        <item>安装单</item>
+        <item>维修单</item>
+    </array>
+
+    <array name="all_faq_list">
+        <item>登录问题</item>
+        <item>设备问题</item>
+        <item>定位问题</item>
+        <item>报警问题</item>
+        <item>轨迹问题</item>
+        <item>指令问题</item>
+    </array>
+
+    <array name="termain_status_list">
+        <item>故障</item>
+        <item>正常</item>
+    </array>
+
+
+    <string-array name="month_display">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="day_display">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="hour_display">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="minute_display">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="road_refresh_settings_display">
+        <item>无</item>
+        <item>1分钟</item>
+        <item>3分钟</item>
+        <item>5分钟</item>
+    </string-array>
+
+    <string-array name="car_refresh_settings_display">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>60秒</item>
+        <item>90秒</item>
+    </string-array>
+
+    <string-array name="alarm_type_display">
+        <item>全部</item>
+        <item>异常</item>
+        <item>报警</item>
+    </string-array>
+
+    <string-array name="create_maintenance_order">
+        <item>车牌号</item>
+        <item>报修方式</item>
+        <item>报修时间</item>
+        <item>故障现象</item>
+        <item>预约维修时间</item>
+        <item>预约维修地点</item>
+        <item>终端型号</item>
+        <item>安装日期</item>
+        <item>车架号</item>
+    </string-array>
+
+    <string-array name="evaluate_maintenance_order">
+        <item>回访评价途径</item>
+        <item>评价时间</item>
+        <item>车牌</item>
+        <item>设备状态</item>
+        <item>车辆状况</item>
+        <item>客户意见</item>
+        <item>服务评价</item>
+    </string-array>
+    
+    <string-array name="maintenance_result_field">
+        <item>故障分析</item>
+        <item>维修措施</item>
+        <item>设备状态</item>
+        <item>维修人员</item>
+        <item>维修日期</item>
+    </string-array>
+
+    <string-array name="result_maintenance_order">
+        <item>故障分析</item>
+        <item>维修措施</item>
+        <item>设备状态</item>
+        <item>维修人员</item>
+        <item>维修日期</item>
+    </string-array>
+
+    <string-array name="maintenance_evaluation_field">
+        <item>工单名称</item>
+        <item>工单号</item>
+        <item>回访评价途径</item>
+        <item>评价时间</item>
+        <item>客户名称</item>
+        <item>客户电话</item>
+        <item>车牌</item>
+        <item>设备状态</item>
+        <item>车辆状况</item>
+        <item>客户意见</item>
+        <item>服务评价</item>
+    </string-array>
+
+    <string-array name="install_baseinfo_order">
+        <item>客户名称</item>
+        <item>客户电话</item>
+        <item>车辆类型</item>
+        <item>安装地址</item>
+        <item>安装形式</item>
+        <item>安装台数</item>
+        <item>要求完成时间</item>
+    </string-array>
+
+    <string-array name="install_record_order">
+        <item>工单名称</item>
+        <item>工单号</item>
+        <item>车牌号</item>
+        <item>车架号</item>
+        <item>终端型号</item>
+        <item>终端ID</item>
+        <item>SIM卡号</item>
+        <item>安装日期</item>
+        <item>设备运行情况</item>
+        <item>安装人员</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/magin_24"
+        >
+
+    <TextView
+        android:layout_width="@dimen/push_message_menu_wh"
+        android:layout_height="@dimen/push_message_menu_wh"
+        android:text="删除"
+        android:textSize="@dimen/push_message_menu_text_size"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/push_message_delete_bg"
+        android:layout_marginLeft="@dimen/magin_3"
+        android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

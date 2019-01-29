@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#0001ABF1</color>
+    <color name="colorPrimary">#01ABF1</color>
+    <color name="colorPrimaryDark">#01ABF1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="base_line_color">#FFE3E3E3</color>
+    <!-- login activity color -->
+    <color name="login_item_bg">#FFF5F5F5</color>
+    <color name="login_item_line_bg">#FFEDEDED</color>
+    <color name="login_input_text_color">#FF666666</color>
+    <color name="login_hint_text_color">#FFBDBDBD</color>
+    <color name="login_commit_bg">#FF27B7F3</color>
+    <color name="login_remember_text_color">#FF929292</color>
+
+    <!-- main activity -->
+    <color name="title_bg">#00AAF2</color>
+    <color name="search_bg">#4CC3F4</color>
+    <color name="search_cancel_text_color">#FF2964FD</color>
+    <color name="search_cleanhistory_text_color">#FFE51C23</color>
+    <color name="title_search_text_color">#FF666666</color>
+    <color name="title_search_text_hint_color">#FFBDBDBD</color>
+    <!-- marker dialog -->
+    <color name="plate_number_textcolor">#313131</color>
+    <color name="marker_status_textcolor">#259B26</color>
+    <color name="marker_address_textcolor">#ff8d8d8d</color>
+    <color name="marker_time_textcolor">#ff8d8d8d</color>
+    <color name="marker_total_mileage_textcolor">#FF333333</color>
+    <color name="marker_speed_textcolor">#FF39D9AE</color>
+    <color name="marker_line_bg">#009DE6</color>
+    <color name="marker_ctrl_textcolor">#05A7F5</color>
+    <color name="marker_ctrl_title_text_color">#FF919191</color>
+    <color name="marker_hint_textcolor">#D0D0D0</color>
+    <!-- main settings -->
+    <color name="settings_username_color">#FF333333</color>
+    <color name="settings_userinfo_color">#FF333333</color>
+    <color name="settings_userinfo_car_count_color">#FF2D5FFB</color>
+    <color name="settings_list_select_color">#33999999</color>
+    <color name="settings_list_item_text_color">#FF676767</color>
+    <color name="settings_item_bg">#B23B3B3B</color>
+    <color name="settings_menu_line_bg">#FFECEBF1</color>
+
+    <!--calssify allcarlist-->
+    <color name="list_divider_color">#FFF5F5F5</color>
+    <color name="item_paltenumber">#FF3A3A3A</color>
+    <color name="bottom_enter_bg">#FF27B7F3</color>
+    <color name="allcar_clean_textcolor">#FFA3A3A3</color>
+    <color name="allcar_search_text_hint_color">#FF828282</color>
+    <color name="allcar_bg_color">#FFECEBF1</color>
+    <color name="allcar_button_bg_color">#FFFDFDFE</color>
+    <color name="allcar_status_color">#33FFFFFF</color>
+    <color name="allcar_status_line_bg">#FFD8D8D8</color>
+    <color name="allcar_search_textcolor">#FF333333</color>
+
+    <!-- main time picker dialog -->
+    <color name="time_picker_title_textcolor">#FF00ABF1</color>
+    <color name="time_picker_line_color">#FF009BE5</color>
+    <color name="time_picker_cancel_bg">#FFE3E3E3</color>
+    <color name="time_picker_cancel_textcolor">#FF8C8C8C</color>
+    <color name="time_picker_enter_bg">#FF27B7F3</color>
+    <color name="time_picker_content_textcolor">#FF00AAF0</color>
+    <color name="time_picker_content_hint_textcolor">#FF2D2D2D</color>
+    <color name="time_picker_hint_text_color">#FFA8A8A8</color>
+    <color name="time_picker_enter_text_color">#FF03A9F4</color>
+    <color name="time_picker_selected_text_color">#FF333333</color>
+    <color name="time_picker_line_bg">#FFF0F0F0</color>
+
+
+    <!-- main search layout -->
+    <color name="search_layout_bg">#FFF5F5F5</color>
+    <color name="search_layout_hstory_text_color">#FF646464</color>
+
+
+    <!-- carinfo Activity-->
+    <color name="carinfo_layout_bg">#FFF0F0F2</color>
+    <color name="carinfo_item_line_bg">#FFF5F5F5</color>
+
+
+    <!-- FAQ activity-->
+
+    <color name="faq_line_bg">#FFE8E8E8</color>
+    <color name="faq_bg">#FFF4F4F4</color>
+    <color name="faq_grid_line">#FFEAECF4</color>
+    <color name="hot_faq_bg">#FFECEBF1</color>
+    <color name="faq_contact_text_color">#FF646464</color>
+
+    <!-- setting activity-->
+    <color name="settings_item_text_color">#FF03A9F4</color>
+    <color name="settings_base_item_color">#FF676767</color>
+    <color name="settings_line_color">#FFDCDCDE</color>
+    <color name="offline_item_title_bg">#FFF0F0F2</color>
+    <color name="offline_map_check_n">#FF29B6F6</color>
+    <color name="offline_map_list_line_color">#FFF5F5F5</color>
+    <color name="download_progressbar_ratio_text_color">#FF03A9F4</color>
+    <color name="download_progressbar_size_text_color">#FFA8A8A8</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <!-- 橙色2 -->
+    <color name="list_selected_color">#FFFF9900</color>
+    <color name="loginout_text_color">#FF1C8DFE</color>
+
+    <!-- compact marker -->
+    <color name="compact_marker_line_bg">#FFF3F3F3</color>
+    <color name="compact_marker_buttom_bg">#FF28B7F6</color>
+    <color name="compact_marker_text_color">#FF8D8D8D</color>
+    <color name="compact_marker_operation_line_color">#FF009DE6</color>
+    <color name="compact_marker_operation_text_color">#FF5A5A5A</color>
+
+    <!--feedback layout -->
+    <color name="feedback_text_color">#FF666666</color>
+    <color name="feedback_texthint_color">#FFBDBDBD</color>
+
+    <!-- about activity -->
+    <color name="about_activity_bg">#FFF4F4F4</color>
+    <color name="about_officail_web_color">#FF00A7F7</color>
+    <color name="about_company_text_color">#FF969696</color>
+
+    <!-- push message -->
+    <color name="push_message_bg">#FFECEBF1</color>
+    <color name="push_message_time_text_color">#FF828282</color>
+    <color name="push_message_content_text_color">#FF919191</color>
+
+    <color name="dialog_bg">#60000000</color>
+
+    <!-- offline map-->
+    <color name="select_title_text_color">#FF03A9F4</color>
+    <color name="offline_item_bg">#FFECEBF1</color>
+    <color name="offline_line_bg">#FFBFBFBF</color>
+    <color name="offline_line_allctrl_text_color">#FF90C1FF</color>
+    <color name="offline_line_search_hint_textcolor">#FFC9C9C9</color>
+    <color name="offline_line_task_ctrl_title_textcolor">#FFC6C6C6</color>
+    <color name="offline_line_task_ctrl_textcolor">#FF2083FE</color>
+    <color name="offline_line_task_ctrl_delete_textcolor">#FFFA4F5C</color>
+    <color name="offline_line_manager_delete_textcolor">#FFFB4F60</color>
+    <color name="offline_line_task_ctrl_cancel_textcolor">#FF333333</color>
+    <color name="offline_line_manager_size_textcolor">#FFBDBDBD</color>
+    <color name="offline_line_task_ctrl_line_bg">#FFECEBF1</color>
+
+    <!-- track log -->
+    <color name="track_log_content_bg">#FFF0F0F1</color>
+    <color name="track_log_item_time_color">#FF333333</color>
+    <color name="track_log_info_platenumber_color">#FF333333</color>
+    <color name="track_log_item_speed_color">#FF39DBAC</color>
+    <color name="track_log_item_stoptime_color">#FFFC7078</color>
+    <color name="track_log_info_addres_color">#FF646464</color>
+    <color name="track_log_item_line_color">#FFECEBF1</color>
+    <color name="track_bottom_line_color">#FFE3E3E3</color>
+    <color name="track_play_speed_text_color">#FF1F85FE</color>
+
+    <!--alarm log -->
+    <color name="alarm_log_item_tiem">#FF666666</color>
+    <color name="track_log_infowindown_color">#FF333333</color>
+
+    <!--operation dialog -->
+    <color name="operation_pwd_text_color">#FF666666</color>
+    <color name="operation_pwd_text_hint_color">#FFBDBDBD</color>
+    <color name="operation_result_textcolor">#FF333333</color>
+    <color name="operation_fortify_line_color">#FFC9C9C9</color>
+    <color name="operation_fortify_select_color">#FF1B8FFF</color>
+
+    <!--activity contact us -->
+
+    <color name="contact_text_color">#FF00ACF0</color>
+    <color name="contact_text_color_hint">#FF313131</color>
+
+    <!-- maintenance order -->
+    <color name="order_list_item_orderNumber_text">#FF232323</color>
+    <color name="order_list_item_text">#FF666666</color>
+    <color name="order_list_bg_color">#FFECEBF1</color>
+    <color name="maintenance_evaluate_text_color">#FFFD3E50</color>
+    <color name="maintenance_look_evaluate_text_color">#FF222222</color>
+    <color name="maintenance_look_evaluate_endtime_text_color">#FFBCBCBC</color>
+    <color name="creat_maintenance_title_text_color">#FF222222</color>
+    <color name="creat_maintenance_errordescribe_text_color">#FFBCBCBC</color>
+    <color name="creat_maintenance_createbutton_on_color">#FF2084FE</color>
+    <color name="creat_maintenance_createbutton_off_color">#FF999999</color>
+    <color name="creat_maintenance_enter_ctrl_color">#FF2B64FC</color>
+    <color name="creat_maintenance_commit_success_hint_color">#FF919191</color>
+    <color name="creat_maintenance_commit_success_showlist_color">#FF2A5BFF</color>
+    <color name="maintenance_valuation_status_text_color">#FF222222</color>
+    <color name="maintenance_valuation_hint_text_color">#FF999999</color>
+    <color name="valuation_other_comment_suggestion_hint_color">#FFC2C2C2</color>
+    <color name="valuation_termina_status_hint_color">#FF6E6E6E</color>
+
+    <color name="valuation_result_item_layout_title_text_color">#FF222222</color>
+    <color name="valuation_result_title_text_color">#FF999999</color>
+    <color name="creat_maintenance_getpicture_item_text_color">#FF333333</color>
+    <color name="maintenance_order_info_status_ctrl_button_bg">#FF2084FE</color>
+
+    <!-- upload maintenance result-->
+    <color name="upload_maintenance_result_title_text_color">#FF222222</color>
+    <color name="upload_maintenance_result_hint_text_color">#FF999999</color>
+    <color name="upload_maintenance_result_dialog_back_textcolor">#FF1D8CFF</color>
+
+    <color name="maintenance_order_info_result_title_text_color">#FF999999</color>
+    <color name="maintenance_order_info_result_text_color">#FF222222</color>
+
+    <!--install order -->
+    <color name="install_carlist_status_text_color">#FFFD3E50</color>
+    <color name="install_carlist_status_finish_text_color">#FFC2C2C2</color>
+    <color name="install_order_list_item_serialNumber_textcolor">#FF222222</color>
+
+    <color name="order_manager_filtrate_enter_bg">#FF1D8CFF</color>
+
+    <color name="order_status_textcolor">#FFC2C2C2</color>
+    <color name="install_carlist_bg">#FFECEBF1</color>
+    <color name="install_carlist_item_textcolor">#FF222222</color>
+
+    <color name="order_status_disable_bg">#FFC0C0C0</color>
+
+
+    <color name="car_all_cost_text_color">#FFB8DFFC</color>
+    <color name="carcost_content_bg" >#FFECEBF1</color>
+    <color name="carcost_item_title_textcolor" >#FF222222</color>
+    <color name="carcost_item_textcolor" >#FFFE3F4F</color>
+
+    <color name="attachment_filename_item_textcolor" >#FF222222</color>
+    <color name="attachment_time_item_textcolor" >#FF999999</color>
+    <color name="progress_time_item_textcolor" >#FF999999</color>
+    <color name="progress_name_item_textcolor" >#FF333333</color>
+    <color name="order_status_text_color" >#FFFC3F4E</color>
+
+    <color name="feepay_item_textcolor" >#FF222222</color>
+
+
+
+</resources>

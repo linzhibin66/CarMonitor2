@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="@dimen/settings_item_icon_wh"
+            android:layout_height="@dimen/settings_item_icon_wh"
+            android:layout_marginTop="@dimen/magin_13"
+            android:layout_marginBottom="@dimen/magin_13"
+            android:layout_alignParentRight="true"
+            android:src="@color/login_commit_bg"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.6"
+        >
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/magin_16"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/settings_list_item_text_color"
+        android:textSize="@dimen/settings_list_item_textsize"
+        android:minWidth="@dimen/settings_list_item_text_minw"
+        android:text="使用指南"
+        />
+
+  <include
+        layout="@layout/include_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_text"
+        />
+
+    </RelativeLayout>
+       <!-- android:textStyle="bold"-->
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/faq_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/nodata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:background="@color/faq_bg"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/useguide_nodata_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:scaleType="center"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/img_list_no_car"
+                />
+
+            <TextView
+                android:id="@+id/nodata_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/useguide_nodata_icon"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/load_data_error"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/faq_bg"
+            android:layout_below="@id/nodata_layout"
+            >
+
+
+            <WebView
+                android:id="@+id/faq_web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+        <ExpandableListView
+            android:id="@+id/faq_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="@dimen/line_h"
+            android:divider="@drawable/faq_list_divider"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_marginRight="@dimen/magin_10"
+            android:layout_marginLeft="@dimen/magin_10"
+            android:scrollbars="none"
+           android:groupIndicator="@null"
+            />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                 />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/faq_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/faq_content_layout"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>

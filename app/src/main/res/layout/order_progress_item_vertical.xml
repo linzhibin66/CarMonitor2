@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/progress_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/progress_name_item_textcolor"
+        android:text="测试一"
+        />
+
+    <TextView
+        android:id="@+id/progress_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/progress_time_item_textcolor"
+        android:layout_below="@id/progress_name"
+        android:layout_marginTop="5dp"
+        android:text="2015-07-12 20:34:34"
+        />
+
+</RelativeLayout>

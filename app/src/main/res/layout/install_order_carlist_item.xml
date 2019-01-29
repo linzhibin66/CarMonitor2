@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView
+        android:id="@+id/carlist_platenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/install_order_carlist_item_h"
+        android:drawableLeft="@mipmap/install_carlist_icon"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/magin_15"
+        android:drawablePadding="@dimen/magin_8"
+        android:text="2546821649225"
+        android:textSize="@dimen/install_order_carlist_item_textsize"
+        android:textColor="@color/install_carlist_item_textcolor"
+        />
+
+    <TextView
+        android:id="@+id/carlist_status"
+        android:layout_width="@dimen/install_order_carlist_item_status_text_w"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/carlist_platenumber"
+        android:layout_marginLeft="@dimen/magin_7"
+        android:layout_centerVertical="true"
+        android:background="@drawable/install_type_bg"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:text="未填"
+        />
+
+</RelativeLayout>

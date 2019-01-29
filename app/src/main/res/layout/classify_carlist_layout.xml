@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/nocar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/classify_carlist_nocar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/img_list_no_car"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/classify_carlist_nocar_icon"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/no_car_data"
+            />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_search_layout_h"
+        android:layout_marginLeft="@dimen/magin_14"
+        android:layout_marginRight="@dimen/magin_14"
+        android:background="@drawable/allcar_search_bg"
+        android:layout_marginTop="@dimen/magin_5"
+        android:layout_marginBottom="@dimen/magin_3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:id="@+id/allcar_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_allcar_search"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_13"
+            />
+
+        <EditText
+            android:id="@+id/allcar_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_toRightOf="@id/allcar_search_icon"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:hint="@string/search_layout_hint"
+            android:textSize="@dimen/allcar_search_text_size"
+            android:textColorHint="@color/allcar_search_text_hint_color"
+            android:textColor="@color/black"
+            />
+
+
+    </RelativeLayout>-->
+
+    <ProgressBar
+        android:id="@+id/loading_pbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/classify_carlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="@dimen/line_h"
+        android:background="@color/white"
+        />
+
+
+
+</LinearLayout>

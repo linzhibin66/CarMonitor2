@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    >
+
+    <RelativeLayout
+        android:id="@+id/pushmessage_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title_layout"
+        />
+
+    <com.easyder.carmonitor.widget.swipemenulistview.SwipeMenuListView
+        android:id="@+id/message_list"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="@color/push_message_bg"/>
+
+        <RelativeLayout
+            android:id="@+id/no_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:background="@color/track_log_content_bg"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/classify_carlist_nocar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:scaleType="center"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/img_list_no_car"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classify_carlist_nocar_icon"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/no_push_message_data"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pushmessage_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/pushmessage_content_layout"
+        >
+    </RelativeLayout>
+
+</LinearLayout>

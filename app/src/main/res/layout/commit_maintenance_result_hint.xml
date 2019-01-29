@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/back_ctrl_layout"
+        android:layout_width="@dimen/valuation_result_w"
+        android:layout_height="@dimen/valuation_result_h"
+        android:background="@drawable/valuation_result_layout_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/upload_maintenance_result_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@mipmap/valuation_result_cion"
+            android:layout_marginTop="@dimen/magin_13"
+
+            />
+
+        <TextView
+            android:id="@+id/success_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upload_maintenance_result_icon"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/creat_maintenance_order_enter_title_textsize"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/upload_maintenance_success"
+            android:layout_marginTop="@dimen/magin_10"
+            />
+
+        <TextView
+            android:id="@+id/success_title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/creat_maintenance_order_enter_title_hint_textsize"
+            android:text="服务器无响应"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/magin_15"
+            android:layout_below="@+id/success_title_text"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/back_ctrl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/creat_maintenance_order_enter_ctrl_layout_h"
+            android:layout_alignParentBottom="true"
+            android:text="@string/string_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/valuation_result_back_ctrl_textsize"
+            android:background="@mipmap/valuation_back_bg"
+            android:layout_marginLeft="@dimen/magin_41"
+            android:layout_marginRight="@dimen/magin_41"
+            android:layout_marginBottom="@dimen/magin_16"
+            android:visibility="gone"
+            >
+
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/upload_fial_ctrl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/magin_16"
+            android:layout_marginLeft="@dimen/magin_24"
+            android:layout_marginRight="@dimen/magin_24"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/upload_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/maintenance_resutl_back"
+                android:text="@string/string_back"
+                android:textColor="@color/upload_maintenance_result_dialog_back_textcolor"
+                android:textSize="@dimen/upload_maintenance_result_dialog_textsize"
+                />
+
+            <Button
+                android:id="@+id/upload_recommit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/maintenance_result_recommit"
+                android:textColor="@color/white"
+                android:text="@string/upload_maintenance_result_recommit"
+                android:textSize="@dimen/upload_maintenance_result_dialog_textsize"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/commit_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_operation_loading"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

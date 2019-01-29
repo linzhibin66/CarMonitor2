@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/allcarlist_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/allcar_title_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/bottom_select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/allcarlist_selectlayout_h"
+            android:layout_alignParentBottom="true"
+            android:background="@color/allcar_button_bg_color"
+            >
+
+            <TextView
+                android:id="@+id/select_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/bottom_select_hint"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/magin_20"
+                />
+
+            <LinearLayout
+                android:id="@+id/select_all_layout"
+                android:layout_width="@dimen/allcarlist_select_view_w"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/select_enter_textszie"
+
+                    android:text="@string/bottom_select_all"/>
+
+                <CheckBox
+                    android:id="@+id/select_all_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/allcar_checkbox"
+                    android:layout_marginLeft="@dimen/magin_11"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/select_car_enter"
+                android:layout_width="@dimen/allcarlist_bottom_enter_w"
+                android:layout_height="@dimen/allcarlist_bottom_enter_h"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="@string/bottom_select_enter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/select_enter_textszie"
+                android:background="@drawable/allcar_enter_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/magin_10"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/select_car_clean"
+                android:layout_width="@dimen/allcarlist_bottom_enter_w"
+                android:layout_height="@dimen/allcarlist_bottom_enter_h"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="@string/bottom_select_clean"
+                android:textColor="@color/allcar_clean_textcolor"
+                android:textSize="@dimen/select_enter_textszie"
+                android:background="@drawable/allcar_clean_bg"
+                android:layout_marginRight="@dimen/magin_10"
+                android:layout_toLeftOf="@id/select_car_enter"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+      <RelativeLayout
+            android:id="@+id/allcarlist_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:layout_above="@id/bottom_select"
+            >
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hint_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/magin_28"
+            android:layout_marginLeft="@dimen/magin_28"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+            <ProgressBar
+                android:id="@+id/hint_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_hint_text"
+                android:layout_toRightOf="@id/hint_progressbar"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allcarlist_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/allcarlist_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

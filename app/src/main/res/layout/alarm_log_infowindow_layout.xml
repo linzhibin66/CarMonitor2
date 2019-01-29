@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alarm_log_infowindown_bg"
+    android:gravity="center"
+
+
+    >
+<!--
+
+    <RelativeLayout
+
+        >
+-->
+
+    <ImageView
+        android:id="@+id/alarm_log_infowindow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/icon_warn_status"
+        />
+
+    <TextView
+        android:id="@+id/alarm_log_infowindown_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/alarm_log_infowindown_text_size"
+        android:textColor="@color/track_log_infowindown_color"
+        android:text="超时报警"
+        android:gravity="center"
+        android:layout_toRightOf="@id/alarm_log_infowindow_status"
+        android:layout_marginLeft="@dimen/magin_5"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/creat_order_search_platenumber_text_h"
+    android:textColor="@color/creat_maintenance_getpicture_item_text_color"
+    android:paddingLeft="@dimen/magin_14"
+    android:textSize="@dimen/creat_order_search_platenumber_textsize"
+    android:gravity="center_vertical"
+    >
+
+</TextView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_bg"
+    >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title_layout"
+        />
+
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/track_info_bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:clickable="true">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <ImageButton
+        android:id="@+id/track_info_map_type_imgb"
+        android:layout_width="@dimen/main_buttom_wh"
+        android:layout_height="@dimen/main_buttom_wh"
+        android:layout_below="@id/title_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_16"
+        android:scaleType="center"
+        android:src="@mipmap/btn_map_satellite"
+        />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/track_log_info_buttonlayout_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/magin_26"
+        >
+
+        <LinearLayout
+            android:id="@+id/carinfo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/track_log_info_icon_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/marker_info_car"
+                android:scaleType="center"
+                />
+
+            <TextView
+                android:id="@+id/track_log_info_platenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/track_log_info_platenumber_color"
+                android:textSize="@dimen/track_log_info_platenumber_text_size"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:text="蓝 粤S222222"
+                />
+
+            <ImageView
+                android:id="@+id/track_log_info_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_run"
+                android:layout_marginLeft="@dimen/magin_7"
+                />
+
+            <TextView
+                android:id="@+id/track_log_info_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/track_log_info_speed_bg"
+                android:gravity="center"
+                android:text="60km/h"
+                android:textColor="@color/track_log_item_speed_color"
+                android:textSize="@dimen/track_log_info_speed_text_size"
+                android:layout_marginLeft="@dimen/magin_5"
+                />
+
+            <ImageView
+                android:id="@+id/log_info_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_warn_status"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/log_info_exception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wrong"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/track_log_info_addres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carinfo_layout"
+            android:textSize="@dimen/track_log_info_addres_text_size"
+            android:text="广东省东莞市东城区东城大道188号东200米"
+            android:textColor="@color/track_log_info_addres_color"
+            android:layout_marginTop="@dimen/magin_4"
+            />
+
+       <TextView
+           android:id="@+id/track_log_info_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:text="2016-06-27 12:30:52"
+           android:textColor="@color/track_log_info_addres_color"
+           android:textSize="@dimen/track_log_info_time_text_size"
+           android:layout_below="@id/track_log_info_addres"
+           android:layout_marginTop="@dimen/magin_7"
+           />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

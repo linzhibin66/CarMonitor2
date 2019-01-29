@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+        <RelativeLayout
+            android:id="@+id/install_order_number_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/magin_10"
+            android:paddingLeft="@dimen/magin_15"
+            >
+
+            <TextView
+                android:id="@+id/order_list_item_ordercontacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@id/alarm_status"
+                android:textSize="@dimen/order_list_item_textsize"
+                android:textStyle="bold"
+                android:text="GDH20171103"
+                android:textColor="@color/install_order_list_item_serialNumber_textcolor"
+                />
+
+            <TextView
+                android:id="@+id/order_list_item_installcount"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/install_list_item_type_h"
+                android:layout_toRightOf="@id/order_list_item_ordercontacts"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:textSize="@dimen/install_list_item_type_textsize"
+                android:textColor="@color/install_order_list_item_serialNumber_textcolor"
+                android:background="@drawable/install_type_bg"
+                android:gravity="center"
+                android:paddingRight="@dimen/magin_7"
+                android:paddingLeft="@dimen/magin_7"
+                android:text="3台"
+                />
+
+            <TextView
+                android:id="@+id/order_list_item_installstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/magin_16"
+                android:drawablePadding="@dimen/magin_5"
+                android:textSize="@dimen/order_list_item_textsize"
+                android:text="待接单"
+                />
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_list_item_finishtiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/install_order_number_layout"
+                android:layout_marginTop="@dimen/magin_8"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:paddingLeft="@dimen/magin_15"
+                android:textSize="@dimen/order_list_item_textsize"
+                android:textColor="@color/order_list_item_text"
+                android:drawableLeft="@mipmap/order_list_item_time_icon"
+                android:drawablePadding="@dimen/magin_10"
+                android:text="10月30日 9:00-12:00"
+                />
+            <TextView
+                android:id="@+id/order_list_item_installlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_list_item_finishtiem"
+                android:paddingLeft="@dimen/magin_15"
+                android:layout_marginTop="@dimen/magin_5"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:layout_marginBottom="@dimen/magin_10"
+                android:textSize="@dimen/order_list_item_textsize"
+                android:textColor="@color/order_list_item_text"
+                android:drawableLeft="@mipmap/order_list_item_addres_icon"
+                android:drawablePadding="@dimen/magin_10"
+                android:text="东莞市东城大道188号"
+                />
+
+   <!-- <RelativeLayout
+        android:id="@+id/install_order_status_ctrl_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/magin_20"
+        >
+
+        <ImageView
+            android:id="@+id/install_order_status_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@mipmap/install_order_type"
+            />
+
+        <TextView
+            android:id="@+id/install_order_status_ctrl"
+            android:layout_width="@dimen/maintenance_order_status_ctrl_button_w"
+            android:layout_height="@dimen/maintenance_order_status_ctrl_button_h"
+            android:layout_below="@id/install_order_status_type"
+            android:layout_marginTop="@dimen/magin_22"
+            android:layout_marginRight="@dimen/magin_11"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/maintenance_order_status_ctrl_bg"
+            android:textColor="@color/white"
+            android:text="接单"
+            android:gravity="center"
+            android:textSize="15sp"
+            />
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

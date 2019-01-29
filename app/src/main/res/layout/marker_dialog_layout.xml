@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/marker_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/marker_layout_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/magin_15"
+            android:paddingRight="@dimen/magin_15"
+            android:paddingTop="@dimen/magin_10"
+            >
+
+            <LinearLayout
+                android:id="@+id/marker_right_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/magin_5"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/marker_orientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_north"
+                    />
+
+                <TextView
+                    android:id="@+id/marker_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_7"
+                    android:textSize="@dimen/marker_speed_textsize"
+                    android:textColor="@color/marker_speed_textcolor"
+                    android:textStyle="bold"
+                    android:text="32km/h"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/marker_platenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marker_text_h"
+                android:textSize="@dimen/marker_platenumber_textsize"
+                android:textColor="@color/plate_number_textcolor"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="蓝 粤S22222"
+                />
+            <TextView
+                android:id="@+id/marker_status"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marker_text_h"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/marker_status_textsize"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/marker_platenumber"
+                android:layout_marginLeft="@dimen/magin_11"
+                android:paddingLeft="@dimen/magin_7"
+                android:paddingRight="@dimen/magin_7"
+                android:background="@drawable/acc_run_bg"
+                android:text="行驶"
+                />
+            <TextView
+                android:id="@+id/alarm_status"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marker_text_h"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/marker_status_textsize"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/marker_status"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:paddingLeft="@dimen/magin_7"
+                android:paddingRight="@dimen/magin_7"
+                android:background="@drawable/acc_alarm_bg"
+                android:text="@string/alarm_status"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/exception_status"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marker_text_h"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/marker_status_textsize"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/alarm_status"
+                android:layout_marginLeft="@dimen/magin_5"
+                android:paddingLeft="@dimen/magin_7"
+                android:paddingRight="@dimen/magin_7"
+                android:background="@drawable/acc_exception_bg"
+                android:text="@string/exception_status"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/marker_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marker_address_textcolor"
+                android:textSize="@dimen/marker_address_textsize"
+                android:layout_below="@id/marker_platenumber"
+                android:layout_marginTop="@dimen/magin_5"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_toLeftOf="@id/marker_right_layout"
+                android:text="广东省东莞市东城区东城大道东200米"
+                />
+            <TextView
+                android:id="@+id/marker_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marker_time_textcolor"
+                android:textSize="@dimen/marker_time_textsize"
+                android:layout_below="@id/marker_address"
+                android:text="2016-12-12 12:12:20"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="@dimen/magin_11"
+            android:layout_marginRight="@dimen/magin_11"
+            android:layout_marginTop="@dimen/magin_10"
+            >
+
+            <RelativeLayout
+                android:id="@+id/marker_warning"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/marker_dialog_left_btn"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/marker_ctrl_textcolor"
+                    android:drawableLeft="@mipmap/icon_warn_marker"
+                    android:drawablePadding="@dimen/magin_5"
+                    android:textSize="@dimen/marker_ctrl_textsize"
+                    android:text="@string/warning"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/marker_track"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/marker_dialog_middle_btn"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/marker_ctrl_textcolor"
+                    android:textSize="@dimen/marker_ctrl_textsize"
+                    android:text="@string/track"
+                    android:drawableLeft="@mipmap/icon_trail"
+                    android:drawablePadding="@dimen/magin_5"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/marker_operation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/marker_dialog_right_btn"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/marker_ctrl_textcolor"
+                    android:textSize="@dimen/marker_ctrl_textsize"
+                    android:text="@string/operation"
+                    android:drawableLeft="@mipmap/icon_control"
+                    android:drawablePadding="@dimen/magin_5"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/marker_hint_textsize"
+            android:textColor="@color/marker_hint_textcolor"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/marker_hint"
+            android:layout_marginBottom="@dimen/magin_7"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

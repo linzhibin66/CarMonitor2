@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/orderinfo_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title__text_layout"
+            />
+
+        <ScrollView
+            android:id="@+id/scrollview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:fillViewport="true"
+            >
+
+            <RelativeLayout
+            android:id="@+id/maintenance_orderinfo_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/valuation_finish_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/maintenance_valuation_status_text_color"
+                android:text="@string/maintenance_order_finish"
+                android:textSize="@dimen/maintenance_order_finish_textsize"
+                android:layout_marginTop="@dimen/magin_28"
+                />
+
+            <TextView
+                android:id="@+id/valuation_maintenance_result_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/valuation_finish_text"
+                android:textColor="@color/maintenance_valuation_hint_text_color"
+                android:text="@string/maintenance_order_valuation_hint"
+                android:textSize="@dimen/maintenance_order_valuation_hint_textsize"
+                android:layout_marginTop="@dimen/magin_12"
+                />
+
+                <LinearLayout
+                    android:id="@+id/termina_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_43"
+                    android:layout_marginRight="@dimen/magin_43"
+                    android:layout_marginTop="@dimen/magin_19"
+                    android:layout_below="@id/valuation_maintenance_result_hint_text"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/termina_status_text_title"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:text="设备状态"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/valuation_termina_status_hint_color"
+                        />
+
+                    <TextView
+                        android:id="@+id/normal_check"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="@string/normal_str"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@drawable/valuation_select_item_text_color"
+                        android:background="@drawable/valuation_select_item_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/fault_check"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@drawable/valuation_select_item_text_color"
+                        android:background="@drawable/valuation_select_item_bg"
+                        android:layout_marginLeft="@dimen/magin_13"
+                        android:layout_marginRight="@dimen/magin_13"
+                        android:text="@string/fault_str"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/car_status_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/termina_status"
+                    android:layout_marginTop="@dimen/magin_19"
+                    android:minHeight="71dp"
+                    android:background="@drawable/valuation_editext_bg"
+                    android:layout_marginLeft="@dimen/magin_43"
+                    android:layout_marginRight="@dimen/magin_43"
+                    android:hint="@string/valuation_car_status"
+                    android:gravity="top"
+                    android:padding="@dimen/magin_12"
+                    android:textSize="@dimen/valuation_other_comment_suggestion_textsize"
+                    android:textColorHint="@color/valuation_other_comment_suggestion_hint_color"
+                    android:textColor="@color/black"
+                    />
+
+
+            <TextView
+                android:id="@+id/valuation_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/car_status_text"
+                android:textColor="@color/maintenance_valuation_hint_text_color"
+                android:text="@string/maintenance_order_valuation_hint"
+                android:textSize="@dimen/maintenance_order_valuation_hint_textsize"
+                android:layout_marginTop="@dimen/magin_19"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/valuation_hint_text"
+                android:numStars="4"
+                android:rating="4"
+                android:stepSize="1"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                style="@style/foodRatingBar"
+                />
+
+            <LinearLayout
+                android:id="@+id/valuation_hint_select_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/magin_43"
+                android:layout_marginRight="@dimen/magin_43"
+                android:layout_below="@id/ratingBar"
+                android:layout_marginTop="@dimen/magin_23"
+                android:layout_centerHorizontal="true"
+                >
+                
+                <CheckBox
+                    android:id="@+id/good_service_attitude_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="@string/valuation_hint_good_service_attitude"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    />
+
+                <CheckBox
+                    android:id="@+id/arrive_on_time_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    android:layout_marginLeft="@dimen/magin_13"
+                    android:layout_marginRight="@dimen/magin_13"
+                    android:text="@string/valuation_hint_arrive_on_time"
+                    />
+
+                <CheckBox
+                    android:id="@+id/thole_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    android:text="@string/valuation_hint_thole"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/valuation_hint_select_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/magin_43"
+                android:layout_marginRight="@dimen/magin_43"
+                android:layout_below="@id/valuation_hint_select_layout_1"
+                android:layout_marginTop="@dimen/magin_13"
+                android:layout_centerHorizontal="true"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/quick_pick_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="@string/valuation_hint_quick_pick"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    />
+
+                <CheckBox
+                    android:id="@+id/zeal_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    android:layout_marginLeft="@dimen/magin_13"
+                    android:layout_marginRight="@dimen/magin_13"
+                    android:text="@string/valuation_hint_zeal"
+                    />
+
+                <CheckBox
+                    android:id="@+id/fast_speed_check"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/valuation_select_item_text_color"
+                    android:background="@drawable/valuation_select_item_bg"
+                    android:text="@string/valuation_hint_fast_speed"
+                    />
+
+            </LinearLayout>
+            
+            <EditText
+                android:id="@+id/other_comment_suggestion_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/valuation_hint_select_layout_2"
+                android:layout_marginTop="@dimen/magin_19"
+                android:minHeight="71dp"
+                android:background="@drawable/valuation_editext_bg"
+                android:layout_marginLeft="@dimen/magin_43"
+                android:layout_marginRight="@dimen/magin_43"
+                android:hint="@string/valuation_other_comment_suggestion"
+                android:gravity="top"
+                android:padding="@dimen/magin_12"
+                android:textSize="@dimen/valuation_other_comment_suggestion_textsize"
+                android:textColorHint="@color/valuation_other_comment_suggestion_hint_color"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/maintenance_orderinfo_valuation_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/orderinfo_content_layout"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maintenance_orderinfo_valuation_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toLeftOf="@id/maintenance_orderinfo_valuation_layout_outmost"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        >
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:id="@+id/marker_ctrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/marker_ctrl_bg"
+        android:layout_marginLeft="@dimen/magin_5"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/marker_ctrl_carinfo"
+            android:layout_width="@dimen/compact_marker_ctrl_item_w"
+            android:layout_height="@dimen/compact_marker_ctrl_item_h"
+            android:background="@drawable/marker_radio_btn_selector"
+            android:button="@null"
+            android:text="@string/carinfo"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@color/marker_ctrl_title_text_color"
+            />
+
+        <RadioButton
+            android:id="@+id/marker_ctrl_track"
+            android:layout_width="@dimen/compact_marker_ctrl_item_w"
+            android:layout_height="@dimen/compact_marker_ctrl_item_h"
+            android:background="@drawable/marker_radio_btn_selector"
+            android:button="@null"
+            android:text="@string/track"
+            android:gravity="center"
+            android:textColor="@color/marker_ctrl_title_text_color"
+            />
+
+        <RadioButton
+            android:id="@+id/marker_ctrl_warning"
+            android:layout_width="@dimen/compact_marker_ctrl_item_w"
+            android:layout_height="@dimen/compact_marker_ctrl_item_h"
+            android:background="@drawable/marker_radio_btn_selector"
+            android:button="@null"
+            android:text="@string/warning"
+            android:gravity="center"
+            android:textColor="@color/marker_ctrl_title_text_color"
+            />
+
+        <RadioButton
+            android:id="@+id/marker_ctrl_operation"
+            android:layout_width="@dimen/compact_marker_ctrl_item_w"
+            android:layout_height="@dimen/compact_marker_ctrl_item_h"
+            android:button="@null"
+            android:text="@string/operation"
+            android:gravity="center"
+            android:background="@drawable/marker_radio_btn_selector"
+            android:textColor="@color/marker_ctrl_title_text_color"
+            />
+    </RadioGroup>
+
+</LinearLayout>

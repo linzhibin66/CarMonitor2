@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/search_order_by_platenumber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/magin_5"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_10"
+        android:orientation="horizontal"
+        android:background="@drawable/main_title_bg"
+        >
+
+        <EditText
+            android:id="@+id/search_content_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:textSize="@dimen/allcar_search_text_size"
+            android:textColorHint="@color/progress_time_item_textcolor"
+            android:textColor="@color/allcar_search_textcolor"
+            android:hint="@string/search_hint"
+            android:gravity="center"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_line_color"
+            android:layout_marginTop="@dimen/magin_3"
+            android:layout_marginBottom="@dimen/magin_3"
+            />
+
+        <ImageButton
+            android:id="@+id/search_order_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_search_main"
+            android:scaleType="center"
+            android:background="@null"
+            />
+
+        <TextView
+            android:id="@+id/cancle_search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/cancel"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_order_by_platenumber_layout"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/maintenance_order_add_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintenance_order_info_status_ctrl_button_h"
+        android:textSize="@dimen/maintenance_order_info_status_ctrl_button_textsize"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/add_maintenance_order"
+        android:background="@color/maintenance_order_info_status_ctrl_button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/order_list_bg_color"
+        android:layout_below="@id/nodata_layout"
+        android:layout_above="@id/maintenance_order_add_button"
+        >
+
+        <ListView
+            android:id="@+id/orderitem_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_marginLeft="@dimen/magin_5"
+            android:layout_marginRight="@dimen/magin_5"
+            android:dividerHeight="@dimen/item_interval"
+            android:divider="@color/order_list_bg_color"
+            android:background="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

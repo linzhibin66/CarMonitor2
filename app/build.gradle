@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'android_hygd.keystore'
+            keyPassword 'HYGDgps@123456'
+            storeFile file('E:/Workspace/android_hygd.keystore')
+            storePassword 'HYGDgps@123456'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.easyder.carmonitor"
+//        multiDexEnabled true
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 83
+        versionName "2.2"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile project(':mvp')
+    compile project(':pickerview')
+}

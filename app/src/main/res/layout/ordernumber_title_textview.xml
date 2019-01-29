@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:textColor="@color/creat_maintenance_title_text_color"
+    android:text="@string/create_maintenance_order_ordernumber"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/magin_15"
+    android:textSize="14sp"
+    android:background="@color/white"
+    >
+
+</TextView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/faq_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/magin_20"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/faq_contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_buttom_h"
+            android:text="@string/faq_contact"
+            android:background="@color/white"
+            android:textSize="@dimen/settings_loginout_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/loginout_text_color"
+            />
+
+        <!--<TextView
+            android:id="@+id/faq_contact_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_16"
+            android:layout_marginTop="@dimen/magin_20"
+            android:layout_marginBottom="@dimen/magin_20"
+            android:textSize="@dimen/opinion_contact_hint_text_size"
+            android:text="@string/faq_hint"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/faq_contact"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginRight="@dimen/magin_15"
+            android:layout_marginBottom="@dimen/magin_10"
+            android:layout_below="@id/faq_contact_hint"
+            android:textSize="@dimen/opinion_contact_hint_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/faq_contact_text_color"
+            android:text="@string/faq_contact"
+            android:background="@drawable/faq_contact_bg"
+            />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

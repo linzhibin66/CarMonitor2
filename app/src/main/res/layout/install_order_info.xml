@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/install_orderinfo_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/install_orderinfo_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:orientation="vertical"
+            >
+            
+            <RelativeLayout
+                android:id="@+id/install_title_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/maintenance_order_info_status_h"
+                android:background="@mipmap/maintenance_orderinfo_status_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/install_title_status_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_14"
+                    android:src="@mipmap/icon_processed"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/install_title_status_image"
+                    android:layout_marginLeft="@dimen/magin_16"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    >
+                        <TextView
+                            android:id="@+id/install_status_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/commit_status_title"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/install_title_hint_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/magin_5"
+                            android:text="@string/commit_status_hint"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/install_order_info_status_ctrl_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/maintenance_order_info_status_ctrl_button_h"
+                android:textSize="@dimen/maintenance_order_info_status_ctrl_button_textsize"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="接单"
+                android:background="@color/maintenance_order_info_status_ctrl_button_bg"
+                />
+
+            <ScrollView
+                android:id="@+id/scrollview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/install_title_status"
+                android:layout_above="@id/install_order_info_status_ctrl_button"
+                android:fillViewport="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/install_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/about_activity_bg"
+                    >
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/install_orderinfo_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/install_orderinfo_content_layout"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderinfo_hint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toLeftOf="@id/install_orderinfo_layout_outmost"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

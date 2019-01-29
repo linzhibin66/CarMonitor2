@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/about_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+        <ScrollView
+            android:id="@+id/content_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_below="@id/title_layout"
+            android:background="@color/about_activity_bg"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/magin_14"
+            >
+
+            <com.easyder.carmonitor.widget.RoundImageView
+                android:id="@+id/app_icon"
+                android:layout_width="@dimen/icon_wh"
+                android:layout_height="@dimen/icon_wh"
+                android:layout_marginTop="@dimen/magin_37"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon2"
+                />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_icon"
+                android:layout_marginTop="@dimen/magin_7"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_name_version"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <RelativeLayout
+                android:id="@+id/version_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_activity_item_wh"
+                android:layout_below="@id/app_name"
+                android:layout_marginTop="@dimen/magin_33"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_version_string"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    />
+
+                <TextView
+                    android:id="@+id/app_version_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/magin_26"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publish_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_activity_item_wh"
+                android:layout_below="@id/version_layout"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/app_time"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    />
+
+                <TextView
+                    android:id="@+id/publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/release_date"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/magin_26"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/official_web_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_activity_item_wh"
+                android:layout_below="@id/publish_time_layout"
+                android:layout_marginTop="@dimen/magin_10"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_official_website"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    />
+
+                <TextView
+                    android:id="@+id/official_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="www.shinetech.cn"
+                    android:autoLink="all"
+                    android:textColorLink="@color/about_officail_web_color"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/magin_16"
+                    android:drawableRight="@mipmap/icon_next"
+                    android:drawablePadding="@dimen/magin_12"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/wechat_search_car"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_activity_item_wh"
+                android:text="@string/app_wechat_search_car"
+                android:gravity="center_vertical"
+                android:layout_below="@id/official_web_layout"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/icon_next"
+                android:textColor="@color/black"
+                android:paddingRight="@dimen/magin_16"
+                android:paddingLeft="@dimen/magin_20"
+                android:visibility="gone"
+                />
+
+
+                <TextView
+                    android:id="@+id/contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/about_activity_item_wh"
+                    android:text="@string/app_contact_us"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_next"
+                    android:layout_below="@id/wechat_search_car"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/magin_16"
+                    android:paddingLeft="@dimen/magin_20"
+                    />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_us"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:layout_marginBottom="@dimen/magin_10"
+                >
+                <TextView
+                    android:id="@+id/app_copyright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_copyright"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/company_textsize"
+                    android:textColor="@color/about_company_text_color"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_copyright"
+                    android:text="@string/app_company_name"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/company_textsize"
+                    android:textColor="@color/about_company_text_color"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/about_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maintenance_order_info_base_content_h"
+    android:background="@color/white"
+    android:paddingTop="@dimen/magin_15"
+    android:paddingBottom="@dimen/magin_15">
+
+        <TextView
+            android:id="@+id/maintenance_platenumber"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="车牌"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_platenumber_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_platenumber"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            android:text="蓝 粤S22222"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_proposer"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_platenumber"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="报修人"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_proposer_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_proposer"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_platenumber"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            android:text="李先生"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_contact_number"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_proposer"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="联系电话"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_contact_number_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_contact_number"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_proposer"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            android:text="13555555555"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_appointment_time"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_contact_number"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="预约时间"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_appointment_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_appointment_time"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_contact_number"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            android:text="11月8日 12:00-16:00"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_appointment_location"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_appointment_time"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="预约地点"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_appointment_location_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_appointment_time"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_appointment_time"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:text="莞城街道东城大道188号新华大厦"
+            />
+
+</RelativeLayout>

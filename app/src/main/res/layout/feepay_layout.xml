@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/feepay_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:background="@color/faq_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_layout"
+                android:orientation="vertical"
+                android:background="@color/faq_bg"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/feepay_item_h"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="@string/feepay_platenumber"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/feepay_item_textcolor"
+                        android:textSize="@dimen/feepay_item_textsize"
+                        android:paddingLeft="@dimen/magin_15"
+                        />
+                    <TextView
+                        android:id="@+id/feepay_platenumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/feepay_item_textsize"
+                        android:textColor="@color/feepay_item_textcolor"
+                        android:text="粤S22222"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/feepay_item_h"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/magin_10"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="@string/feepay_fee"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/feepay_item_textcolor"
+                        android:textSize="@dimen/feepay_item_textsize"
+                        android:paddingLeft="@dimen/magin_15"
+                        />
+
+                    <EditText
+                        android:id="@+id/feepay_fee"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/feepay_item_textsize"
+                        android:textColor="@color/feepay_item_textcolor"
+                        android:hint="0.00"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/feepay_info"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/magin_10"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/feepay_item_h"
+                        android:layout_weight="2"
+                        android:text="@string/feepay_info"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/feepay_item_textcolor"
+                        android:textSize="@dimen/feepay_item_textsize"
+                        android:paddingLeft="@dimen/magin_15"
+                        />
+
+                    <EditText
+                        android:id="@+id/feepay_info"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:hint="@string/feepay_info_hint"
+                        android:scrollHorizontally="false"
+                        android:paddingTop="@dimen/magin_5"
+                        android:paddingBottom="@dimen/magin_5"
+                        android:gravity="center_vertical"
+                        android:inputType="textMultiLine"
+                        android:textSize="14sp"
+                        android:textColor="@color/feepay_item_textcolor"
+                        />
+
+                </LinearLayout>
+
+                <!--<EditText
+                    android:id="@+id/message_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/feepay_info"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/magin_10"
+                    android:paddingTop="@dimen/magin_14"
+                    android:paddingLeft="@dimen/magin_16"
+                    android:paddingRight="@dimen/magin_5"
+                    android:hint="@string/feepay_info_hint"
+                    android:inputType="text"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:textColor="@color/feedback_text_color"
+                    />-->
+
+
+                <Button
+                    android:id="@+id/commit_feepay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/opinion_commit_btn_h"
+                    android:layout_marginTop="@dimen/magin_10"
+                    android:background="@color/white"
+                    android:text="@string/enter_feepay"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/loginout_text_color"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feepay_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/feepay_content_layout"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feepay_hint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toLeftOf="@id/feepay_layout_outmost"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>

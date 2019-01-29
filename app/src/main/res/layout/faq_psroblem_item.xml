@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/icon_question"
+            android:layout_marginLeft="@dimen/magin_10"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/faq_psroblem_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1000"
+            android:layout_marginRight="@dimen/magin_5"
+            android:layout_marginLeft="@dimen/magin_26"
+            android:maxLines="2"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+           <!-- android:text="登录密码忘了，提示“账号或密码错误”怎么办？"-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/icon_next"
+            android:layout_marginRight="@dimen/magin_10"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

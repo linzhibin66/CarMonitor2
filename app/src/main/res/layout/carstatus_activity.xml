@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:carinfo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/carstatus_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <ScrollView
+            android:layout_below="@id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carinfo_layout_bg"
+            >
+
+            <LinearLayout
+                android:id="@+id/carinfo_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/magin_5"
+                android:orientation="vertical">
+
+                <com.easyder.carmonitor.widget.CarInfoItem
+                    android:id="@+id/acc_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    carinfo:carinfo_icon="@mipmap/status_acc"
+                    carinfo:carinfo_attribute="@string/car_status_acc"
+                    carinfo:carinfo_has_line="false"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/location_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_location"
+                        carinfo:carinfo_attribute="@string/car_status_location"
+
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/lat_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_lat"
+                        carinfo:carinfo_attribute="@string/car_status_lat"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/lng_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_lng"
+                        carinfo:carinfo_attribute="@string/car_status_lng"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/operation_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_operation"
+                        carinfo:carinfo_attribute="@string/car_status_operation"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/secrecy_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_secrecy"
+                        carinfo:carinfo_attribute="@string/car_status_secrecy"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/brake_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_brake"
+                        carinfo:carinfo_attribute="@string/car_status_brake"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/signalleft_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_signalleft"
+                        carinfo:carinfo_attribute="@string/car_status_signalleft"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/signalright_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_signalright"
+                        carinfo:carinfo_attribute="@string/car_status_signalright"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/highbeam_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_highbeam"
+                        carinfo:carinfo_attribute="@string/car_status_highbeam"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/magin_5"
+                    android:layout_marginLeft="@dimen/magin_8"
+                    android:layout_marginRight="@dimen/magin_8"
+                    android:orientation="vertical">
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/oiline_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_oiline"
+                        carinfo:carinfo_attribute="@string/car_status_oiline"
+                        />
+
+                    <com.easyder.carmonitor.widget.CarInfoItem
+                        android:id="@+id/circuitry_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        carinfo:carinfo_icon="@mipmap/status_circuitry"
+                        carinfo:carinfo_attribute="@string/car_status_circuitry"
+                        carinfo:carinfo_has_line="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carstatus_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/carstatus_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

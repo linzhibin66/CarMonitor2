@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_h"
+    >
+
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/title_back_img_wh"
+            android:layout_height="@dimen/title_back_img_wh"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:background="@null"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_name_textsize"
+            android:text="@string/allcarlist_title"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title_back"
+            />
+
+        <ImageButton
+            android:id="@+id/title_search"
+            android:layout_width="@dimen/title_back_search_wh"
+            android:layout_height="@dimen/title_back_search_wh"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/magin_10"
+            android:background="@null"
+            />
+
+
+</RelativeLayout>

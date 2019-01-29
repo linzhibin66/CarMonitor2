@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!-- 去掉标题 -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/activity_animation_style</item>
+
+    </style>
+
+    <style name="activity_animation_style">
+        <item name="android:activityOpenEnterAnimation">@anim/pop_right2left_anim_open</item>
+        <item name="android:activityOpenExitAnimation">@anim/pop_right2left_anim_close</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pop_right2left_anim_open</item>
+        <item name="android:activityCloseExitAnimation">@anim/pop_right2left_anim_close</item>
+    </style>
+
+    <style name="ImageTranslucentTheme" parent="AppTheme">
+    </style>
+
+    <style name="TransparentTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="transparent_bg">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="popwindow_anim_upanddown">
+        <item name="android:windowEnterAnimation">@anim/pop_down2up_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pop_up2down_anim</item>
+        <!-- 指定消失的动画xml -->
+
+    </style>
+
+    <style name="popwindow_anim_leftright">
+        <item name="android:windowEnterAnimation">@anim/pop_left2right_anim_open</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pop_left2right_anim_close</item>
+        <!-- 指定消失的动画xml -->
+
+    </style>
+
+    <style name="popwindow_anim_delay">
+        <!--<item name="android:windowEnterAnimation">@anim/delay_anim</item>-->
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/delay_anim</item>
+        <!-- 指定消失的动画xml -->
+
+    </style>
+
+    <style name="popupDialog" >
+        <item name="android:windowBackground">@color/dialog_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/valuation_ratingstars</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:maxHeight">28dp</item>
+    </style>
+
+    <style name="foodRatingBar_item" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/valuation_ratingstars_item</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+</resources>

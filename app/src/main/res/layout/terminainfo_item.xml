@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/terminainfo_title"
+        android:layout_width="@dimen/creat_maintenance_order_title_w"
+        android:layout_height="@dimen/creat_maintenance_order_item_h"
+        android:paddingLeft="@dimen/magin_13"
+        android:text="@string/carinfo_platenumber"
+        android:gravity="center_vertical"
+        android:textColor="@color/creat_maintenance_title_text_color"
+        android:textSize="@dimen/creat_maintenance_order_title_textsize"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/terminainfo_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/creat_maintenance_order_item_h"
+        android:layout_toRightOf="@id/terminainfo_title"
+        android:background="@color/white"
+        android:textColor="@color/creat_maintenance_title_text_color"
+        android:lines="1"
+        android:textSize="@dimen/creat_maintenance_order_title_textsize"
+        />
+    <View
+        android:id="@+id/terminainfo_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_line_color"
+        android:layout_below="@id/terminainfo_title"
+        />
+
+</RelativeLayout>

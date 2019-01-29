@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyder.carmonitor">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 系统弹框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <!--                            Share SDK permission                             -->
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <!-- 百度统计 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".CarMonitorApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qsSKGnd8TdBrjVk0v2I0aLGGjtjhgLnT" />
+
+        <activity android:name=".activity.LoginActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity android:name=".activity.AllCarListActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.AccountExplainActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.FAQActiviry"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.FAQItemActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        
+        <activity android:name=".activity.FeedbackActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.PushMessageActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.SettingsActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity android:name=".activity.AboutUsActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+
+        <activity android:name=".activity.CarInfoActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.OffLineMapActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.TrackActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.TrackLogInfoActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.AlarmLogInfoActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.SendMessageActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".activity.UseGuideActivity"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:resizeableActivity="false"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@style/TransparentTheme"
+            />
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:resizeableActivity="false"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@style/TransparentTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx8fd252202f7ff598"/>
+            </intent-filter>
+
+            </activity>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:resizeableActivity="false"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100429666" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:resizeableActivity="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+        <receiver android:name="com.easyder.carmonitor.broadcast.DisConnectServerBroadcast">
+            <intent-filter android:priority="1000">
+                <action android:name="disConnect_server"/>
+            </intent-filter>
+        </receiver>
+
+        <!--百度统计 配置 -->
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="edf5646238" />
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="CarMonitor test" />
+            <!--android:value="CarMonitor2.0 test" />-->
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <!--百度统计 end -->
+
+    </application>
+
+</manifest>

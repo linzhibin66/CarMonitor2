@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/carcost_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title__text_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/carcost_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carcost_titlecontent_h"
+            android:layout_below="@id/title_layout"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="center"
+                android:src="@mipmap/maintenance_orderinfo_status_bg"/>
+            
+            <TextView
+                android:id="@+id/carcost_update"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/carcost_titlecontent_platenumber_info_text_h"
+                android:textColor="@color/white"
+                android:textSize="@dimen/carcost_titlecontent_platenumber_info_textsize"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/magin_14"
+                android:layout_marginTop="@dimen/magin_3"
+                android:gravity="center_vertical"
+                android:text="@string/carcost_update_time"
+                />
+
+            <TextView
+                android:id="@+id/carcost_platenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/carcost_titlecontent_platenumber_info_text_h"
+                android:textColor="@color/white"
+                android:textSize="@dimen/carcost_titlecontent_platenumber_info_textsize"
+                android:layout_marginLeft="@dimen/magin_14"
+                android:layout_marginTop="@dimen/magin_3"
+                android:gravity="center_vertical"
+                android:text="@string/carcost_platenumber"
+                />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/carcost_titlecontent_all_cost_h"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/magin_16">
+
+                <View
+                    android:id="@+id/center_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/car_all_cost_text_color"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/all_arrears_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carcost_titlecontent_all_cost_text_h"
+                    android:layout_toLeftOf="@id/center_line"
+                    android:layout_marginLeft="@dimen/magin_15"
+                    android:layout_marginRight="@dimen/magin_5"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/carcost_titlecontent_all_cost_textsize"
+                    android:text="@string/all_arrears"
+                    android:textColor="@color/car_all_cost_text_color"
+                    />
+                <TextView
+                    android:id="@+id/all_arrears"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carcost_titlecontent_all_cost_text_h"
+                    android:layout_toLeftOf="@id/center_line"
+                    android:layout_marginLeft="@dimen/magin_15"
+                    android:layout_marginRight="@dimen/magin_5"
+                    android:layout_below="@id/all_arrears_title"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/carcost_titlecontent_all_cost_textsize"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/arrears_month_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carcost_titlecontent_all_cost_text_h"
+                    android:layout_toRightOf="@id/center_line"
+                    android:layout_marginLeft="@dimen/magin_15"
+                    android:layout_marginRight="@dimen/magin_5"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/carcost_titlecontent_all_cost_textsize"
+                    android:text="@string/arrears_month"
+                    android:textColor="@color/car_all_cost_text_color"
+                    />
+                <TextView
+                    android:id="@+id/arrears_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carcost_titlecontent_all_cost_text_h"
+                    android:layout_toRightOf="@id/center_line"
+                    android:layout_marginLeft="@dimen/magin_15"
+                    android:layout_marginRight="@dimen/magin_5"
+                    android:layout_below="@id/all_arrears_title"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/carcost_titlecontent_all_cost_textsize"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/carcost_content"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/carcost_info_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/carcost_content_bg"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carcost_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/carcost_content_layout"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carcost_enter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toLeftOf="@id/carcost_layout_outmost"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        >
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

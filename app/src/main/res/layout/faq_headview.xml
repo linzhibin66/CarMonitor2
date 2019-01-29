@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.easyder.carmonitor.widget.LineGridView
+        android:id="@+id/faq_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/faq_head_h"
+        android:numColumns="3"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hot_faq_h"
+        android:background="@color/hot_faq_bg"
+        android:text="@string/hot_faq"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/magin_14"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/magin_15">
+
+        <TextView
+            android:id="@+id/maintenance_order_result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/valuation_result_item_layout_title_h"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textSize="@dimen/valuation_result_item_layout_title_text_size"
+            android:gravity="center"
+            android:text="@string/upload_maintenance_result"
+            android:textColor="@color/valuation_result_item_layout_title_text_color"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/maintenance_order_result_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/maintenance_order_result_title"
+            />
+
+
+        <TextView
+            android:id="@+id/maintenance_order_result_analyze_title"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintenance_order_result_line"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="@string/upload_maintenance_result_analyze"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_order_result_analyze_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintenance_order_result_line"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_toRightOf="@id/maintenance_order_result_analyze_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+
+            />
+
+        <TextView
+            android:id="@+id/maintenance_result_measures_title"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_order_result_analyze_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="@string/upload_maintenance_result_measures"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_result_measures_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_result_measures_title"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_order_result_analyze_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_time_title"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_result_measures_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="@string/upload_maintenance_time"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_time_title"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_result_measures_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+
+            />
+
+        <TextView
+            android:id="@+id/maintenance_result_termain_status_title"
+            android:layout_width="@dimen/maintenance_order_info_content_title_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_time_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_title_text_color"
+            android:text="@string/upload_maintenance_result_termain_status"
+            />
+
+        <TextView
+            android:id="@+id/maintenance_result_termain_status_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maintenance_result_termain_status_title"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_below="@id/maintenance_time_title"
+            android:textSize="@dimen/maintenance_order_info_content_text_size"
+            android:textColor="@color/maintenance_order_info_result_text_color"
+            />
+
+</RelativeLayout>

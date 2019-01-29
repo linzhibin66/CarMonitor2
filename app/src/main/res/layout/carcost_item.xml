@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/carcost_baseitem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/carcost_item_text_h"
+        android:text="月租"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/magin_14"
+        android:textColor="@color/carcost_item_title_textcolor"
+        />
+
+    <TextView
+        android:id="@+id/carcost_baseitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/carcost_item_text_h"
+        android:text="￥60"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/magin_14"
+        android:textColor="@color/carcost_item_textcolor"
+        />
+
+    <View
+        android:id="@+id/carcost_baseitem_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/carcost_baseitem_value"
+        android:background="@color/base_line_color"
+        />
+
+</RelativeLayout>

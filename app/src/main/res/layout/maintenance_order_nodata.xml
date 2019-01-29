@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/order_item_nodata_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/order_nodata"
+        android:layout_marginTop="122dp"
+        />
+
+    <TextView
+        android:id="@+id/order_item_nodata_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_item_nodata_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/magin_13"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="@string/order_item_nodata"
+        />
+
+    <RelativeLayout
+        android:id="@+id/nodata_creat_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/creat_maintenance_order_show_order_list_h"
+        android:layout_below="@id/order_item_nodata_hint"
+        android:layout_marginTop="@dimen/magin_30"
+        android:layout_marginLeft="@dimen/magin_28"
+        android:layout_marginRight="@dimen/magin_28"
+        android:background="@drawable/commit_success_show_list_bg"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/creat_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/creat_maintenance_commit_success_showlist_color"
+            android:text="@string/creat_maintenance_order_now"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/creat_order_icon"
+            android:drawablePadding="@dimen/magin_10"
+            android:textSize="@dimen/creat_maintenance_order_show_order_list_textsize"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

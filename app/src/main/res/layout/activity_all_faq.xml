@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/faq_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/faq_bg"
+            android:layout_below="@id/title_layout"
+            >
+
+
+        <ExpandableListView
+            android:id="@+id/faq_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/magin_8"
+            android:layout_marginLeft="@dimen/magin_8"
+            android:layout_marginTop="@dimen/magin_10"
+            android:dividerHeight="1dp"
+            android:divider="@drawable/faq_list_divider"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:groupIndicator="@null"
+            />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/faq_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/faq_content_layout"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/alarm_log_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+            <include
+                android:id="@+id/title_layout"
+                layout="@layout/alarm_title_layout"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_layout"
+                android:background="@color/track_log_content_bg"
+                >
+
+                <ListView
+                    android:id="@+id/alarm_log_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_10"
+                    android:layout_marginRight="@dimen/magin_10"
+                    android:background="@color/white"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    >
+                </ListView>
+
+                <ProgressBar
+                    android:id="@+id/alarm_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60000000"
+            android:layout_below="@id/title_layout"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/alarm_filter_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@mipmap/violation_bg"
+                >
+
+                <ListView
+                    android:id="@+id/alarm_filter_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:background="@color/white"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/alarm_filter_select_all"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@color/white"
+                        android:text="全选"
+                        android:textColor="#666666"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/magin_10"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/alarm_filter_enter_select"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="完成"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="#1D8CFE"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:background="@color/track_log_content_bg"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/classify_carlist_nocar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:scaleType="center"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/img_list_no_car"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classify_carlist_nocar_icon"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/no_alarm_log_data"
+                />
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alarm_log_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/alarm_log_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

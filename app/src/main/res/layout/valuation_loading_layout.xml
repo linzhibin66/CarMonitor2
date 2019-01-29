@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/back_ctrl_layout"
+            android:layout_width="@dimen/valuation_result_w"
+            android:layout_height="@dimen/valuation_result_h"
+            android:layout_centerInParent="true"
+            android:background="@drawable/valuation_result_layout_bg"
+            >
+
+            <ImageView
+                android:id="@+id/valuation_result_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@mipmap/valuation_result_cion"
+                android:layout_marginTop="@dimen/magin_13"
+
+                />
+
+            <TextView
+                android:id="@+id/success_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/valuation_result_icon"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/creat_maintenance_order_enter_title_textsize"
+                android:textColor="@color/black"
+                android:text="@string/valuation_result_title"
+                android:layout_marginTop="@dimen/magin_13"
+                />
+
+            <TextView
+                android:id="@+id/success_title_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/success_title_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/magin_8"
+                android:textSize="@dimen/creat_maintenance_order_enter_title_hint_textsize"
+                android:text="@string/valuation_result_hint"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/back_ctrl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/creat_maintenance_order_enter_ctrl_layout_h"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:text="@string/string_back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/valuation_result_back_ctrl_textsize"
+                android:background="@mipmap/valuation_back_bg"
+                android:layout_marginLeft="@dimen/magin_41"
+                android:layout_marginRight="@dimen/magin_41"
+                android:layout_marginBottom="@dimen/magin_16"
+                >
+
+            </Button>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/commit_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_operation_loading"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+</RelativeLayout>

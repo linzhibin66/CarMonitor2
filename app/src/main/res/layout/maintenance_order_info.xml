@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/orderinfo_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/maintenance_orderinfo_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            >
+            
+            <RelativeLayout
+                android:id="@+id/maintenance_title_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/maintenance_order_info_status_h"
+                android:background="@mipmap/maintenance_orderinfo_status_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/maintenance_title_status_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin_14"
+                    android:src="@mipmap/icon_processed"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/maintenance_title_status_image"
+                    android:layout_marginLeft="@dimen/magin_16"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    >
+                        <TextView
+                            android:id="@+id/maintenance_status_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/commit_status_title"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/maintenance_title_hint_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/magin_5"
+                            android:text="@string/commit_status_hint"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/maintenance_order_info_status_ctrl_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/maintenance_order_info_status_ctrl_button_h"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/maintenance_order_info_status_ctrl_button_textsize"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="接单"
+                android:background="@color/maintenance_order_info_status_ctrl_button_bg"
+                android:visibility="gone"
+                />
+
+            <ScrollView
+                android:id="@+id/scrollview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/maintenance_title_status"
+                android:layout_above="@id/maintenance_order_info_status_ctrl_button"
+                android:fillViewport="true"
+                >
+                    <LinearLayout
+                        android:id="@+id/content_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/about_activity_bg"
+                        android:orientation="vertical"
+                        >
+                    </LinearLayout>
+
+            </ScrollView>
+            
+            
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maintenance_orderinfo_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/orderinfo_content_layout"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderinfo_hint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toLeftOf="@id/maintenance_orderinfo_layout_outmost"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

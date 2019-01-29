@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/feedback_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:background="@color/faq_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_layout"
+                android:orientation="vertical"
+                android:background="@color/faq_bg"
+                >
+
+                <EditText
+                    android:id="@+id/message_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/send_message_h"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/magin_14"
+                    android:paddingLeft="@dimen/magin_16"
+                    android:paddingRight="@dimen/magin_5"
+                    android:hint="@string/send_message_hint"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:scrollHorizontally="false"
+                    android:textSize="14sp"
+                    android:textColor="@color/feedback_text_color"
+                    />
+
+
+                <Button
+                    android:id="@+id/commit_send_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/opinion_commit_btn_h"
+                    android:layout_marginTop="@dimen/magin_20"
+                    android:background="@color/white"
+                    android:text="@string/enter"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/loginout_text_color"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedback_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/feedback_content_layout"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>

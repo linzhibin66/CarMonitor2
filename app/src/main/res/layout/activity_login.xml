@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    tools:context="com.easyder.carmonitor.activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/login_icon_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/login_bg"
+                android:scaleType="center"
+                />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_icon_bg"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/magin_23"
+            android:layout_marginRight="@dimen/magin_23"
+            android:layout_marginTop="@dimen/magin_46"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_hight"
+                android:layout_marginTop="@dimen/login_item_margintop"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/login_type_platenumber_layout"
+                    android:layout_width="69dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/login_type_platenumber_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_single"
+                        android:layout_alignTop="@+id/login_type_platenumber_tv"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/login_type_platenumber_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/magin_5"
+                        android:layout_toRightOf="@id/login_type_platenumber_icon"
+                        android:text="@string/login_type_platenumber"
+                        android:textSize="@dimen/login_item_text_size"
+                         />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/login_type_group_layout"
+                    android:layout_width="69dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/login_type_group_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_group" />
+
+                    <TextView
+                        android:id="@+id/login_type_group_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/magin_5"
+                        android:layout_toRightOf="@id/login_type_group_icon"
+                        android:text="@string/login_type_group"
+                        android:textSize="@dimen/login_item_text_size"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/login_type_company_layout"
+                    android:layout_width="69dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/login_type_company_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_group" />
+
+                    <TextView
+                        android:id="@+id/login_type_company_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/magin_5"
+                        android:layout_toRightOf="@id/login_type_company_icon"
+                        android:text="@string/login_type_company"
+                        android:textSize="@dimen/login_item_text_size"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/login_type_gis_layout"
+                    android:layout_width="69dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/login_type_gis_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_gis" />
+
+                    <TextView
+                        android:id="@+id/login_type_gis_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/magin_5"
+                        android:layout_toRightOf="@id/login_type_gis_icon"
+                        android:text="@string/login_type_gis"
+                        android:textSize="@dimen/login_item_text_size"
+                         />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_hight"
+                android:layout_marginRight="@dimen/magin_23"
+                android:layout_marginLeft="@dimen/magin_23"
+                >
+<!--                android:background="@color/login_item_bg"-->
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_account" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/login_item_marginleft"
+                    android:layout_toRightOf="@id/user_icon"
+                    android:background="@null"
+                    android:hint="@string/login_user_name_personage"
+                    android:singleLine="true"
+                    android:textColor="@color/login_input_text_color"
+                    android:textColorHint="@color/login_hint_text_color"
+                    android:textSize="@dimen/login_item_text_size" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+
+                <!--android:text="东莞市翔运小汽车出租有限公司(一通）"
+                                    android:text="广东华盈光达科技有限公司"-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/platenumber_color_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_hight"
+                android:layout_marginTop="@dimen/login_item_margintop"
+                android:layout_marginRight="@dimen/magin_23"
+                android:layout_marginLeft="@dimen/magin_23"
+                >
+
+                <ImageView
+                    android:id="@+id/platenumber_color_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_color" />
+
+                <TextView
+                    android:id="@+id/platenumber_color_tv"
+                    android:layout_toRightOf="@id/platenumber_color_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/login_item_marginleft"
+                    android:textColor="@color/login_input_text_color"
+                    android:gravity="center_vertical"
+                    />
+
+                <Spinner
+                    android:id="@+id/platenumber_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/platenumber_color_icon"
+                    android:layout_marginLeft="@dimen/login_item_marginleft"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_hight"
+                android:layout_marginTop="@dimen/login_item_margintop"
+                android:layout_marginRight="@dimen/magin_23"
+                android:layout_marginLeft="@dimen/magin_23"
+                >
+
+                <ImageView
+                    android:id="@+id/pwd_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_password" />
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pwd_icon"
+                    android:layout_marginLeft="@dimen/login_item_marginleft"
+                    android:textColor="@color/login_input_text_color"
+                    android:textColorHint="@color/login_hint_text_color"
+                    android:background="@null"
+                    android:hint="@string/login_pwd"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="@dimen/login_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <!-- <ImageButton
+                     android:layout_width="@dimen/login_pwd_show_w"
+                     android:layout_height="@dimen/login_pwd_show_w"
+                     android:layout_marginRight="@dimen/login_item_marginrlght"
+                     android:background="#FF552255"
+                     android:layout_gravity="center_vertical"
+                     />-->
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/remember_pwd_check"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="@string/remember_pwd"
+                android:textSize="@dimen/login_item_text_size"
+                android:textColor="@color/login_remember_text_color"
+                android:button="@drawable/allcar_checkbox"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/magin_10"
+
+                />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_commit"
+                android:layout_marginTop="@dimen/magin_15"
+                android:background="@drawable/login_commit_btn"
+                android:layout_marginBottom="@dimen/magin_10"
+                android:text="@string/login_commit"
+                android:textSize="@dimen/login_item_commit_textsize"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/accountexplain_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:text="《用户说明》"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/contact_text_color"
+                android:textColorLink="@color/contact_text_color"
+                />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

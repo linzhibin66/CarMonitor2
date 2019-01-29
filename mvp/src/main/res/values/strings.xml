@@ -1,0 +1,102 @@
+<resources>
+
+    <string name="login_error">登录失败,请重试</string>
+    <string name="running_status">开</string>
+    <string name="no_alarm_status">停驶</string>
+    <string name="feedback_origin">车掌控</string>
+
+    <!--10-->
+    <string name="private_car">私家车</string>
+    <!--22-->
+    <string name="taxi_car">出租的士</string>
+    <!--46-->
+    <string name="provincial_bus">省际班车</string>
+    <string name="provincial_chartered">省际包车</string>
+    <string name="intercity_chartered">市际包车</string>
+    <!--70-->
+    <string name="prefecture_bus">县际班车</string>
+    <string name="school_bus">校车</string>
+    <string name="public_passenger_transport">公共客运</string>
+    <!--94-->
+    <string name="intercity_bus">市际班车</string>
+    <string name="intracounty_chartered">县内包车</string>
+    <!--142-->
+    <string name="intracounty_bus">县内班车</string>
+    <string name="bus_rapid_transit">快速公交</string>
+    <!--166-->
+    <string name="law_enforcement_vehicles">执法车</string>
+    <!--190-->
+    <string name="prefecture_chartered">县际包车</string>
+    <string name="public_taxi">公共的士</string>
+    <!--214-->
+    <string name="instructional_car">驾驶员教练车</string>
+    <!--238-->
+    <string name="excavator">勾机车</string>
+    <!--239-->
+    <string name="dangerous_goods_transport">危险货物运输</string>
+    <string name="ordinary_goods_transport">普通货运</string>
+    <string name="test_car">测试车辆</string>
+    <string name="bulk_truck">散装物料车</string>
+    <string name="truck">货车</string>
+    <string name="machineshop_truck">工程车</string>
+    <!--262-->
+    <string name="law_enforcement_vessel">执法船</string>
+    
+    <string name="new_install">新装</string>
+    <string name="change_install">更换</string>
+    <string name="dismantle_install">拆装</string>
+
+    <string name="telephone_service">电话报修</string>
+    <string name="fault_screening">故障筛查</string>
+    <string name="self_help_service">自助报修</string>
+
+
+    <string name="upload_img_error">上传失败</string>
+    <string name="upload_imgs_error">图片上传失败</string>
+    <string name="commit_error">提交失败</string>
+
+    <string name="unknown">未知</string>
+    <string name="plate_number">车牌号</string>
+    <string name="order_type_maintenance">维修</string>
+    <string name="order_type_install">安装</string>
+    <string name="order_name_maintenance">设备维修单</string>
+    <string name="order_name_install">安装单</string>
+    <string name="order_content_maintenance_apply">工单内容_维修申请</string>
+    <string name="order_content_maintenance_result">工单内容_维修结果</string>
+    <string name="order_content_maintenance_evaluate">工单内容_客服回访评价</string>
+    <string name="order_content_install_apply">工单内容_安装申请</string>
+    <string name="order_content_install_carlist">工单同步_车辆表</string>
+    <string name="order_content_install_record">工单入库_安装记录</string>
+
+    <!--维修单流程-->
+    <string name="order_maintenance_progress_creat">新建工单</string>
+    <string name="order_maintenance_progress_send">客服派单</string>
+    <string name="order_maintenance_progress_accept">师傅接单</string>
+    <string name="order_maintenance_progress_maintenance">师傅维修</string>
+    <string name="order_maintenance_progress_evaluate">客服回访评价</string>
+
+    <!--安装单流程-->
+    <string name="order_install_progress_creat">新建工单</string>
+    <string name="order_install_progress_accraditation">总经理审批</string>
+    <string name="order_install_progress_discharge_warehouse">物料出库</string>
+    <string name="order_install_progress_printed_info">资料打印</string>
+    <string name="order_install_progress_arrange_installation">装维安排</string>
+    <string name="order_install_progress_accept">师傅接单</string>
+    <string name="order_install_progress_install">设备安装</string>
+    <string name="order_install_progress_update_info">资料更新</string>
+    <string name="order_install_progress_evaluate">客服回访评价</string>
+
+    <!-- create maintenance order -->
+
+    <string name="create_maintenanceorder_appointment_time">预约维修时间</string>
+    <string name="create_maintenanceorder_appointment_location">预约维修地点</string>
+    <string name="create_maintenanceorder_errordescribe">故障现象</string>
+    <string name="create_maintenanceorder_repairtime">报修时间</string>
+
+    <string name="delete_error">删除失败</string>
+
+    <string name="not_network_connected">当前无网络连接,请在设置中打开网络</string>
+    <string name="create_feepay_order_error">创建订单失败，请重试</string>
+
+
+</resources>

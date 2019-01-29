@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contact_content_layout"
+        android:layout_width="@dimen/dialog_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg"
+        >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/base_title_layout"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/faq_bg"
+            android:layout_below="@id/title_layout"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/magin_12"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监控中心24小时服务电话："
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    android:textColor="@color/contact_text_color_hint"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400-163-6868"
+                    android:layout_marginLeft="@dimen/magin_10"
+                    android:textSize="14sp"
+                    android:textColorLink="@color/contact_text_color"
+                    android:autoLink="phone"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东华盈光达科技有限公司"
+                android:layout_marginTop="@dimen/magin_16"
+                android:textSize="14sp"
+                android:layout_marginLeft="@dimen/magin_20"
+                android:textColor="@color/contact_text_color_hint"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/magin_30"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户服务电话："
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    android:textColor="@color/contact_text_color_hint"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0769-22316555"
+                    android:layout_marginLeft="@dimen/magin_10"
+                    android:textSize="14sp"
+                    android:textColorLink="@color/contact_text_color"
+                    android:autoLink="phone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/magin_14"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网址："
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/magin_20"
+                    android:textColor="@color/contact_text_color_hint"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="www.shinetech.cn"
+                    android:layout_marginLeft="@dimen/magin_10"
+                    android:textSize="14sp"
+                    android:textColorLink="@color/contact_text_color"
+                    android:autoLink="all"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:layout_toRightOf="@id/contact_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+   <!-- <TextView
+        android:id="@+id/group_city_name"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/group_download_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/btn_downloaded"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:scaleType="center"
+        />
+    <TextView
+        android:id="@+id/group_download_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/group_city_name"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:visibility="gone"
+        />-->
+
+    <TextView
+        android:id="@+id/group_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offline_list_item_h"
+        android:gravity="center"
+        android:textSize="@dimen/offline_list_item_textsize"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:text="定位中......"
+        />
+
+    <ImageView
+        android:id="@+id/group_download_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/btn_downloaded"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/magin_7"
+        android:scaleType="center"
+        />
+    <TextView
+        android:id="@+id/group_download_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/group_download_status"
+        android:layout_marginRight="@dimen/magin_10"
+        android:textSize="@dimen/offline_list_item_size_textsize"
+        android:text="30.2M"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

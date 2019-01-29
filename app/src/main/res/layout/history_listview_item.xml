@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/allcarlist_item_wh">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/allcarlist_item_wh">
+
+        <ImageView
+            android:id="@+id/item_car_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_history2"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/check_item"
+            android:layout_marginLeft="@dimen/magin_10"
+            />
+
+        <TextView
+            android:id="@+id/item_car_platenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/item_paltenumber"
+            android:textSize="@dimen/allcarlist_item_paltenumber_textsize"
+            android:layout_toRightOf="@id/item_car_icon"
+            android:layout_marginLeft="@dimen/magin_6"
+            android:text="蓝 粤S222222"/>
+
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/magin_20"
+            android:scaleType="center"
+            android:src="@mipmap/icon_next"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

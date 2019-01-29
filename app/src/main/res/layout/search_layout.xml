@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/marker_layout_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/history_layout"
+          android:layout_width="@dimen/search_layout_w"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/delete_history_search"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/search_history_text_h"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/magin_15"
+              android:gravity="center">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+              <TextView
+                  android:id="@+id/clean_history"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableLeft="@mipmap/icon_delete"
+                  android:drawablePadding="@dimen/magin_3"
+                  android:gravity="center"
+                  android:text="清空历史"
+                  android:textColor="@color/search_cleanhistory_text_color" />
+
+          </RelativeLayout>
+
+        <TextView
+              android:id="@+id/search_history_text"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/search_history_text_h"
+              android:layout_marginLeft="@dimen/magin_11"
+              android:layout_marginTop="@dimen/magin_3"
+              android:gravity="center"
+              android:text="历史搜索"
+              android:textColor="@color/black" />
+
+
+        <GridView
+            android:id="@+id/history_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_history_text"
+            android:layout_marginBottom="@dimen/magin_10"
+            android:layout_marginTop="@dimen/magin_5"
+            android:numColumns="3"
+            android:visibility="gone">
+            <!--android:verticalSpacing="@dimen/magin_8"-->
+        </GridView>
+
+      </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_search_car"
+        android:layout_width="@dimen/search_layout_w"
+        android:layout_height="@dimen/search_history_text_h"
+        android:text="@string/no_search_car"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/loading_pbar"
+        android:layout_width="@dimen/search_layout_w"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/search_content"
+        android:layout_width="@dimen/search_layout_w"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/line_h"
+        android:divider="@color/base_line_color"
+        >
+
+    </ListView>
+
+
+
+</LinearLayout>

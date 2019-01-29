@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/offlinemap_list_searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+    <View
+        android:id="@+id/offlinemap_list_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"
+        />
+
+        <ImageView
+            android:id="@+id/offline_list_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_offline_list_research"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_20"
+            />
+
+        <ImageButton
+            android:id="@+id/offline_cancel_search"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/citylist_search_h"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@mipmap/icon_offlinemap_search_cancel"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+    
+    <EditText
+        android:id="@+id/offlinemap_list_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/citylist_search_h"
+        android:layout_below="@id/offlinemap_list_line1"
+        android:layout_toRightOf="@id/offline_list_search_icon"
+        android:layout_toLeftOf="@id/offline_cancel_search"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:hint="@string/offlinemap_list_search_hint"
+        android:textSize="@dimen/citylist_search_text_size"
+        android:textColorHint="@color/offline_line_search_hint_textcolor"
+
+        android:background="@null"
+        />
+
+
+    <View
+        android:id="@+id/offlinemap_list_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_below="@id/offlinemap_list_search"
+        android:background="@color/base_line_color"
+        />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/offline_searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/offlinemap_list_searchlayout"
+        android:divider="@null"
+        android:background="@color/white"
+        android:visibility="gone"
+        />
+
+    <ExpandableListView
+        android:id="@+id/offline_listview"
+        android:layout_below="@id/offline_searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/white"
+        android:groupIndicator="@null"
+    >
+        <!--android:divider="@color/offline_map_list_line_color"-->
+
+    </ExpandableListView>
+
+</RelativeLayout>
+

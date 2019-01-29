@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/settings_content_layout"
+        android:fillViewport="true"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/settings_content"
+            android:layout_width="@dimen/settings_user_w"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_user_h"
+                android:background="@mipmap/usermenu_userinfo_bg"
+                >
+                <LinearLayout
+                    android:id="@+id/car_count_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_10"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/car_count_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_car_usermenu"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    </RelativeLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2.6"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/settings_car_count_textsize"
+                            android:layout_marginLeft="@dimen/magin_16"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:text="拥有 " />
+
+                        <TextView
+                            android:id="@+id/settings_userinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/settings_username_textsize"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_centerVertical="true"
+                            android:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/settings_car_count_textsize"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:text=" 辆车" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:layout_above="@id/car_count_layout"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/settings_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/settings_username_textsize"
+                        android:layout_marginLeft="@dimen/magin_15"
+                        android:layout_marginRight="@dimen/magin_15"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="广东华盈光达科技有限公司"
+                        />
+
+                  <!--  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/usermenu_usertype_bg"
+                        android:layout_marginLeft="@dimen/magin_15"
+                        android:layout_marginRight="@dimen/magin_15"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:layout_below="@id/settings_username"
+                        android:layout_marginTop="@dimen/magin_6"
+                        android:textStyle="bold"
+                        android:text="GIS用户"
+                        android:textColor="@color/white"
+                        />-->
+
+                </RelativeLayout>
+
+              <!--  <TextView
+                    android:id="@+id/settings_userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/settings_car_count_textsize"
+                    android:textColor="@color/settings_userinfo_color"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="拥有 44 辆车"
+                    android:layout_marginTop="@dimen/magin_10"
+                    android:layout_below="@id/settings_username"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@mipmap/user_menu_carcount"
+                    android:drawablePadding="@dimen/magin_7"
+                    android:gravity="center"
+                    />-->
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/settings_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_item_layout_h"
+                android:listSelector="@drawable/listview_item"
+                android:layout_marginTop="@dimen/magin_28"
+                android:divider="@null"
+                >
+
+            </ListView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:minHeight="@dimen/magin_28"
+                android:layout_weight="100"
+                >
+            </RelativeLayout>
+<!--
+            <ImageView
+                android:id="@+id/advertising_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/magin_20"
+                android:visibility="gone"
+                />-->
+            <WebView
+                android:id="@+id/advertising_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/magin_10"
+                android:layout_marginRight="@dimen/magin_10"
+                android:layout_marginBottom="@dimen/magin_20"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/settings_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/settings_content_layout"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

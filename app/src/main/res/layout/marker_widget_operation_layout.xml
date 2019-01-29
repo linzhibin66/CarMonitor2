@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attribute_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/marker_content_bg">
+
+    <LinearLayout
+        android:id="@+id/ctrl_car_laytou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/compact_marker_operation_item_hs"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/lock_cardoor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/compact_operation_lock_cardoor"
+            android:drawableTop="@drawable/lock_cardoor_bg"
+            android:drawablePadding="@dimen/magin_5"
+            android:textSize="@dimen/compact_marker_operation_item_text_size"
+            android:gravity="center"
+            android:textColor="@color/compact_marker_operation_text_color"
+            />
+
+        <TextView
+            android:id="@+id/open_cardoor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/compact_operation_open_cardoor"
+            android:textSize="@dimen/compact_marker_operation_item_text_size"
+            android:drawableTop="@drawable/open_cardoor_bg"
+            android:drawablePadding="@dimen/magin_5"
+            android:gravity="center"
+            android:textColor="@color/compact_marker_operation_text_color"
+            />
+
+        <TextView
+            android:id="@+id/horn_on"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/compact_operation_horn_on"
+            android:textSize="@dimen/compact_marker_operation_item_text_size"
+            android:drawableTop="@drawable/horn_on_bg"
+            android:drawablePadding="@dimen/magin_5"
+            android:gravity="center"
+            android:textColor="@color/compact_marker_operation_text_color"
+            />
+
+        <TextView
+            android:id="@+id/horn_off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/compact_operation_horn_off"
+            android:textSize="@dimen/compact_marker_operation_item_text_size"
+            android:drawableTop="@drawable/horn_off_bg"
+            android:drawablePadding="@dimen/magin_5"
+            android:gravity="center"
+            android:textColor="@color/compact_marker_operation_text_color"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_h"
+        android:background="@color/base_line_color"
+        android:layout_below="@id/ctrl_car_laytou"
+        android:layout_marginLeft="@dimen/magin_46"
+        />
+
+        <TextView
+            android:id="@+id/marker_operation_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_operation_send_message"
+            android:gravity="center_vertical"
+            android:layout_below="@id/line"
+            android:drawableLeft="@mipmap/marker_operation_sendmessage"
+            android:drawableRight="@mipmap/icon_next"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:paddingRight="@dimen/magin_19"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+<!--            android:drawableRight="@mipmap/icon_next"-->
+
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/marker_operation_send_message"
+            android:layout_marginLeft="@dimen/magin_46"
+            />
+
+       <!-- <CheckBox
+            android:id="@+id/check_fortify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:layout_below="@id/line_1"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/magin_15"
+            android:button="@drawable/marker_operation_fortify_checkbox"
+            android:checked="false"
+            />-->
+
+        <TextView
+            android:id="@+id/compact_operation_fortify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_operation_fortify"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/marker_operation_fortify"
+            android:drawableRight="@mipmap/icon_next"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:paddingRight="@dimen/magin_19"
+            android:layout_below="@id/line_1"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/compact_operation_fortify"
+            android:layout_marginLeft="@dimen/magin_46"
+            />
+
+
+        <TextView
+            android:id="@+id/compact_operation_reset_psw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:text="@string/compact_operation_reset_psw"
+            android:layout_below="@id/line_2"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/marker_operation_resetpsw"
+            android:drawableRight="@mipmap/icon_next"
+            android:drawablePadding="@dimen/magin_15"
+            android:layout_marginLeft="@dimen/magin_15"
+            android:paddingRight="@dimen/magin_19"
+            android:textColor="@color/compact_marker_text_color"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+            <!--android:drawableRight="@mipmap/icon_next"-->
+
+       <!-- <View
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_line_color"
+            android:layout_below="@id/compact_operation_reset_psw"
+            android:layout_marginLeft="@dimen/magin_46"
+            />-->
+
+</RelativeLayout>

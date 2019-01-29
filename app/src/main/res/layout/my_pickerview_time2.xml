@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.easyder.carmonitor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:background="#60000000">
+
+    <RelativeLayout
+        android:id="@+id/pickerview_layout_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pickerview_content"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@android:color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/timepicker_enter_textsize_w"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/pickerview_cancel"
+                android:textColor="@color/time_picker_hint_text_color"
+                android:textSize="@dimen/timepicker_enter_textsize" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btnSubmit"
+                android:layout_toRightOf="@+id/btnCancel"
+                android:textColor="@color/pickerview_topbar_title"
+                android:textSize="@dimen/timepicker_title_textsize" />
+
+            <TextView
+                android:id="@id/btnSubmit"
+                android:layout_width="@dimen/timepicker_enter_textsize_w"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/pickerview_submit"
+                android:textColor="@color/time_picker_enter_text_color"
+                android:textSize="@dimen/timepicker_enter_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_h"
+                android:background="@color/base_line_color"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_marginTop="@dimen/magin_39"
+            android:layout_marginBottom="@dimen/magin_39"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/base_line_color"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/magin_39"
+            android:layout_marginRight="@dimen/magin_39"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.bigkoo.pickerview.lib.NumberPickerView
+                android:id="@+id/year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_ItemPaddingHorizontal="20dp"
+                app1:npv_TextColorHint="@color/colorPrimary"
+                app:npv_RespondChangeInMainThread="false"
+                app1:npv_ShowDivider="false"
+                app:npv_ShowCount="3"
+                app:npv_WrapSelectorWheel="true"/>
+
+            <com.bigkoo.pickerview.lib.NumberPickerView
+                android:id="@+id/month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app:npv_TextArray="@array/month_display"
+                app1:npv_ShowDivider="false"
+                app:npv_WrapSelectorWheel="true"/>
+
+            <com.bigkoo.pickerview.lib.NumberPickerView
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app1:npv_ShowDivider="false"
+                app:npv_TextArray="@array/day_display"
+                app:npv_WrapSelectorWheel="true"/>
+
+            <com.bigkoo.pickerview.lib.NumberPickerView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app1:npv_ShowDivider="false"
+                app:npv_TextArray="@array/hour_display"
+                app:npv_WrapSelectorWheel="true"/>
+
+            <com.bigkoo.pickerview.lib.NumberPickerView
+                android:id="@+id/min"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:npv_ItemPaddingHorizontal="20dp"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app1:npv_ShowDivider="false"
+                app:npv_TextArray="@array/minute_display"
+                app:npv_WrapSelectorWheel="true"/>
+
+        </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

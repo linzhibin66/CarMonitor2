@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clipToPadding="true"
+    android:background="#00000000"
+    tools:context=".activity.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <include
+        android:id="@+id/main_title_layout"
+        layout="@layout/mainlayout_title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/main_person_title_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/magin_10"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/person_icon_bg"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            />
+
+    <com.easyder.carmonitor.widget.RoundImageView
+        android:id="@+id/main_person_usericon"
+        android:layout_width="@dimen/usericon_wh"
+        android:layout_height="@dimen/usericon_wh"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:src="@mipmap/icon_profile_photo"
+        android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/map_ctrl_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/main_title_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/magin_20"
+        >
+    <!--<RelativeLayout
+        android:id="@+id/road_condition_layout"
+        android:layout_width="@dimen/main_buttom_wh"
+        android:layout_height="@dimen/main_buttom_wh"
+        android:background="@mipmap/liveroom_entry_bg"
+        android:gravity="center"
+        >
+        <CheckBox
+            android:id="@+id/road_condition_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/main_road_condition_checkbox"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="路况"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/road_condition_cb"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            />
+        </RelativeLayout>-->
+
+        <ImageButton
+            android:id="@+id/road_condition_imgb"
+            android:layout_width="@dimen/main_buttom_wh"
+            android:layout_height="@dimen/main_buttom_wh"
+            android:scaleType="center"
+            android:src="@mipmap/bmskin_main_icon_roadcondition_off"
+            android:layout_marginTop="@dimen/magin_5"
+            />
+            <!--android:background="@drawable/main_icon_btn"-->
+
+    <ImageButton
+        android:id="@+id/map_type_imgb"
+        android:layout_width="@dimen/main_buttom_wh"
+        android:layout_height="@dimen/main_buttom_wh"
+        android:scaleType="center"
+        android:src="@mipmap/btn_map_satellite"
+        android:layout_marginTop="@dimen/magin_5"
+        />
+        <!--android:background="@drawable/main_icon_btn"-->
+
+        <ImageButton
+            android:id="@+id/location_imgb"
+            android:layout_width="@dimen/main_buttom_wh"
+            android:layout_height="@dimen/main_buttom_wh"
+            android:layout_marginTop="@dimen/magin_5"
+            android:src="@mipmap/btn_location"
+            android:scaleType="center"
+            />
+            <!--android:background="@drawable/main_icon_btn"-->
+
+        <ImageButton
+            android:id="@+id/refresh_imgb"
+            android:layout_width="@dimen/main_buttom_wh"
+            android:layout_height="@dimen/main_buttom_wh"
+            android:layout_marginTop="@dimen/magin_5"
+            android:scaleType="center"
+            android:src="@mipmap/btn_refresh"
+            />
+            <!--android:background="@drawable/main_icon_btn"-->
+
+    </LinearLayout>
+
+</RelativeLayout>

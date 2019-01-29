@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="110dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:id="@+id/hint_dialog_enter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compact_marker_alarm_item_h"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/marker_dialog_commit_bg"
+            android:textColor="@color/white"
+            android:text="@string/enter"
+            android:textSize="@dimen/compact_marker_buttom_text_size"
+            />
+            <!--android:background="@mipmap/marker_dialog_commit_bg"-->
+
+        <TextView
+            android:id="@+id/hint_dialog_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/hint_dialog_enter"
+            android:gravity="center"
+            android:text="该时间段无轨迹信息，请重新选择时间段。"
+            android:textSize="@dimen/compact_marker_text_size"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

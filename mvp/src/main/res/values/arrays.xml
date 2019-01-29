@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="car_status_array">
+        <item>ACC</item>
+        <item>定位</item>
+        <item>纬度</item>
+        <item>经度</item>
+        <item>运营</item>
+        <item>保密插件</item>
+        <item>刹车</item>
+        <item>左转向灯</item>
+        <item>右转向灯</item>
+        <item>远光灯</item>
+        <item>油路</item>
+        <item>电路</item>
+        <item>车门锁</item>
+        <item>设防</item>
+        <item>上线状态</item>
+        <item>驻停</item>
+    </string-array>
+
+
+    <string-array name="ordre_maintenance_progress">
+        <item>新建工单</item>
+        <item>客服派单</item>
+        <item>师傅接单</item>
+        <item>师傅维修</item>
+        <item>客服回访评价</item>
+    </string-array>
+
+    <string-array name="ordre_install_progress">
+        <item>新建工单</item>
+        <item>总经理审批</item>
+        <item>物料出库</item>
+        <item>资料打印</item>
+        <item>装维安排</item>
+        <item>师傅接单</item>
+        <item>设备安装</item>
+        <item>资料更新</item>
+        <item>客服回访评价</item>
+    </string-array>
+
+
+</resources>

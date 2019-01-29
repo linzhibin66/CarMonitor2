@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    >
+
+    <RelativeLayout
+        android:id="@+id/timepicker_outmost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/timepicker_content"
+        android:layout_width="@dimen/timepicker_dialog_w"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/time_picker_layout_bg"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <TextView
+            android:id="@+id/time_picker_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timepicker_dialog_title_h"
+            android:gravity="center"
+            android:textSize="@dimen/timepicker_dialog_title_textsize"
+            android:textColor="@color/time_picker_title_textcolor"
+            android:text="@string/alarm_title"
+            />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_h"
+            android:background="@color/base_line_color"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/magin_10"
+            android:layout_marginBottom="@dimen/magin_10"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/timepicker_dialog_conten_title_h"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/magin_20"
+                >
+
+                <View
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/time_picker_content_textcolor"
+                    android:text="年"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/time_picker_content_textcolor"
+                    android:text="月"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/time_picker_content_textcolor"
+                    android:text="日"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/time_picker_content_textcolor"
+                    android:text="时"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/timepicker_dialog_conten_h"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/magin_5"
+                >
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    android:text="@string/start_time"
+                    android:textColor="@color/time_picker_content_hint_textcolor"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/timepicker_starttime_layout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/time_picker_time_bg"
+                    android:layout_marginRight="@dimen/magin_20"
+                    >
+
+                    <TextView
+                        android:id="@+id/timepicker_start_year"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="2017"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_start_month"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="02"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_start_day"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="16"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_start_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/timepicker_dialog_conten_h"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/magin_5"
+                >
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    android:text="@string/end_time"
+                    android:textColor="@color/time_picker_content_hint_textcolor"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/timepicker_endtime_layout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/time_picker_time_bg"
+                    android:layout_marginRight="@dimen/magin_20"
+                    >
+
+                    <TextView
+                        android:id="@+id/timepicker_end_year"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="2017"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_end_month"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="02"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_end_day"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="16"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/timepicker_end_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/timepicker_dialog_content_textsize"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timepicker_alarm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/timepicker_dialog_conten_h"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/magin_5"
+                android:layout_marginRight="@dimen/magin_20"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/timepicker_dialog_content_textsize"
+                    android:text="@string/alarm_type"
+                    android:textColor="@color/time_picker_content_hint_textcolor"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/time_picker_time_bg"
+                    >
+
+                    <Spinner
+                        android:id="@+id/timepick_alarm_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timepicker_dialog_enter_h"
+            android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:id="@+id/time_picker_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/time_picker_cancel_bg"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/timepicker_dialog_enter_textsize"
+                    android:textColor="@color/time_picker_cancel_textcolor"
+                    android:text="@string/cancel"
+                    />
+
+            <TextView
+                android:id="@+id/time_picker_enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/time_picker_enter_bg"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/timepicker_dialog_enter_textsize"
+                android:textColor="@color/white"
+                android:text="@string/enter"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

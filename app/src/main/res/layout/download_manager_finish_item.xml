@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/offline_list_item_h"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/finish_item_cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offline_list_item_h"
+        android:layout_marginLeft="@dimen/magin_20"
+        android:textSize="@dimen/offline_list_item_size_textsize"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="北京"/>
+
+    <TextView
+        android:id="@+id/finish_item_citysize"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offline_list_item_h"
+        android:layout_marginLeft="@dimen/magin_5"
+        android:layout_toRightOf="@id/finish_item_cityname"
+        android:textSize="@dimen/offline_list_item_size_textsize"
+        android:textColor="@color/offline_line_manager_size_textcolor"
+        android:gravity="center"
+        android:text="40.1M"/>
+
+    <TextView
+        android:id="@+id/finish_item_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offline_list_item_h"
+        android:layout_marginRight="@dimen/magin_20"
+        android:layout_alignParentRight="true"
+        android:text="@string/offline_delete"
+        android:textSize="@dimen/offline_list_item_size_textsize"
+        android:gravity="center"
+        android:textColor="@color/offline_line_manager_delete_textcolor"
+        />
+
+    <View
+        android:id="@+id/finish_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/offline_map_list_line_color"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

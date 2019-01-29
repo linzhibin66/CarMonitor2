@@ -1,0 +1,459 @@
+<resources>
+    <string name="app_name">车掌控</string>
+
+
+    <string name="loading_hint_text">加载中。。。</string>
+    <string name="release_date">2017年11月</string>
+
+    <!-- login activity String -->
+    <string name="login_user_name_personage">车牌号</string>
+    <string name="login_user_name_group">分组名</string>
+    <string name="login_user_name_company">公司名</string>
+    <string name="login_user_name_gis">GIS用户</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_commit">登录</string>
+    <string name="login_type_platenumber">车牌</string>
+    <string name="login_type_platenumber_color">车牌顔色</string>
+    <string name="login_type_group">分组</string>
+    <string name="login_type_company">公司</string>
+    <string name="login_type_gis">GIS</string>
+    <string name="remember_pwd">记住密码</string>
+
+    <string name="username_null">用户名不能为空</string>
+    <string name="username_error">无法获取用户名，退出界面再重新进入</string>
+    <string name="pwd_null">密码不能为空</string>
+    <string name="pwd_error">无法获取密码，退出界面再重新进入</string>
+    <string name="remenber_error">无法获取记住密码设置，退出界面再重新进入</string>
+
+    <!-- main activity -->
+    <string name="search_hint">搜索车辆</string>
+    <string name="location_hint">"获取位置权限失败，无法进行定位"</string>
+    <!--  marker dialog -->
+    <string name="warning">警报</string>
+    <string name="carinfo">详情</string>
+    <string name="track">轨迹</string>
+    <string name="operation">操作</string>
+    <string name="marker_hint">查看车辆详情</string>
+    <string name="marker_info_error">获取不到车辆信息</string>
+    <string name="marker_address_error">获取地址失败</string>
+    <string name="no_location_info">无定位信息</string>
+    <string name="marker_address_analysis">正在解析地址</string>
+    <!-- main settings -->
+    <string name="settings_userinfo">拥有 %1$s 辆车</string>
+    <string name="settings_road_refresh_unit">分钟</string>
+    <string name="settings_car_refresh_unit">秒</string>
+    <string name="settings_no_road_refresh">无</string>
+
+    <!--activity allCarList -->
+    <string name="allcarlist_title">车辆列表</string>
+    <string name="allcarlist_allcar">全部(%1$s)</string>
+    <string name="allcarlist_run">行驶(%1$s)</string>
+    <string name="allcarlist_stop">静止(%1$s)</string>
+    <string name="allcarlist_alarm">报警(%1$s)</string>
+    <string name="online_status">在线</string>
+    <string name="outline_status">离线</string>
+    <string name="acc_open_status">开</string>
+    <string name="acc_run_status">行驶</string>
+    <string name="alarm_status">报警</string>
+    <string name="exception_status">异常</string>
+    <string name="acc_stop_status">熄火</string>
+    <string name="bottom_select_enter">确认(%1$s)</string>
+    <string name="bottom_select_clean">清空</string>
+    <string name="bottom_select_all">全选</string>
+    <string name="bottom_select_hint">已勾选%1$s辆车</string>
+    <string name="search_layout_hint">搜索车牌号码、颜色</string>
+    <string name="title_search_layout_hint">搜索%1$s中的车辆</string>
+    <string name="data_error_again">数据错误，需退出页面重新操作</string>
+    <string name="no_car_data">暂无车辆</string>
+    <string name="load_data_error">无法加载数据，请点击重试</string>
+
+    <!-- main time picker dialog -->
+    <string name="cancel">取消</string>
+    <string name="enter">确定</string>
+    <string name="enter_feepay">确认缴费</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="alarm_type">报警类型</string>
+    <string name="alarm_title">查看警报</string>
+    <string name="track_title">查看轨迹</string>
+    <string name="compact_start_time">开始：</string>
+    <string name="compact_end_time">结束：</string>
+    <string name="compact_type">类型：</string>
+    <string name="compact_operation_send_message">发送信息</string>
+    <string name="compact_operation_fortify">设防</string>
+    <string name="compact_operation_fortify_off">撤防</string>
+    <string name="compact_operation_reset_psw">复位终端密码</string>
+    <string name="compact_operation_horn_on">鸣喇叭</string>
+    <string name="compact_operation_horn_off">关喇叭</string>
+    <string name="compact_operation_open_cardoor">开车门</string>
+    <string name="compact_operation_lock_cardoor">锁车门</string>
+    <string name="compact_year">年</string>
+    <string name="compact_month">月</string>
+    <string name="compact_day">日</string>
+    <string name="compact_hour">时</string>
+    <string name="compact_min">分</string>
+    <string name="hint_settime_error">选择的时间不能超过当前时间</string>
+    <string name="hint_settime_error2">选择的时间不能是已过去的时间</string>
+
+
+
+    <!-- mian Search dialog-->
+    <string name="no_search_car">搜索不到相应车辆</string>
+    <string name="unidentifiable_car">无法识别此车辆</string>
+    <string name="no_get_carinfo">无法获取该车辆信息</string>
+
+    <!-- carinfo activity-->'
+    <string name="carinfo_title">车辆详情</string>
+    <string name="carinfo_platenumber">车牌号</string>
+    <string name="carinfo_status">更多状态</string>
+    <string name="carinfo_alarms">违规信息</string>
+    <string name="carinfo_time">定位时间</string>
+    <string name="carinfo_speed">时速</string>
+    <string name="carinfo_orientation">方向</string>
+    <string name="carinfo_elevation">海拔</string>
+    <string name="carinfo_mileage">里程</string>
+    <string name="carinfo_adress">地址</string>
+    <string name="carinfo_install_time">安装时间</string>
+    <string name="carinfo_pay_time">缴费时间</string>
+    <string name="carinfo_validity_time">有效期</string>
+    <string name="carinfo_company_name">所属公司</string>
+    <string name="carinfo_group_name">所属分组</string>
+    <string name="carinfo_contact">联系人</string>
+    <string name="carinfo_phone">联系电话</string>
+
+    <string name="north">正北</string>
+    <string name="northeast">东北</string>
+    <string name="east">正东</string>
+    <string name="southeast">东南</string>
+    <string name="south">正南</string>
+    <string name="southwest">西南</string>
+    <string name="west">正西</string>
+    <string name="northwest">西北</string>
+
+    <!-- car status Activity-->
+    <string name="car_status_acc">ACC</string>
+    <string name="car_status_location">定位</string>
+    <string name="car_status_lat">纬度</string>
+    <string name="car_status_lng">经度</string>
+    <string name="car_status_operation">运营</string>
+    <string name="car_status_secrecy">保密插件</string>
+    <string name="car_status_brake">刹车</string>
+    <string name="car_status_signalleft">左转向灯</string>
+    <string name="car_status_signalright">右转向灯</string>
+    <string name="car_status_highbeam">远光灯</string>
+    <string name="car_status_oiline">油路</string>
+    <string name="car_status_circuitry">电路</string>
+    <string name="status_open">开</string>
+    <string name="status_close">关</string>
+    <string name="status_location">锁定</string>
+    <string name="status_unlocation">未</string>
+    <string name="status_lat_south">南纬</string>
+    <string name="status_lat_north">北纬</string>
+    <string name="status_lng_west">西经</string>
+    <string name="status_lng_east">东经</string>
+    <string name="status_operation_null">空载</string>
+    <string name="status_operation_all">重载</string>
+    <string name="status_secrecy_open">加密</string>
+    <string name="status_secrecy_close">未加密</string>
+    <string name="status_brake_open">制动</string>
+    <string name="status_brake_close">正常</string>
+    <string name="status_on">ON</string>
+    <string name="status_off">OFF</string>
+
+    <!--FAQ activity -->
+    <string name="faq_hint">还没解决？</string>
+    <string name="faq_title">常见问题</string>
+    <string name="faq_contact">联系客服</string>
+    <string name="hot_faq">热门问题</string>
+
+    <!-- settings activity-->
+    <string name="offline_map">离线地图</string>
+    <string name="about_us">关于我们</string>
+    <string name="share">推荐给朋友</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_sent_failed">发送失败</string>
+    <string name="share_auth_denied">认证失败</string>
+    <string name="share_unsupport">不支持</string>
+    <string name="share_unknown">未知错误</string>
+    <string name="logout">退出登录</string>
+    <string name="settings_title">设置</string>
+    <string name="car_refresh_settings">车辆刷新设置</string>
+    <string name="road_refresh_settings">路况刷新设置</string>
+
+    <string name="downloading">正在下载</string>
+    <string name="download">下载</string>
+    <string name="downloaded">已下载</string>
+    <string name="download_stop">已暂停</string>
+    <string name="download_wait">等待下载</string>
+    <string name="dataerror_download_again">数据错误，需重新下载</string>
+    <string name="undefined">未定义</string>
+    <string name="download_manager">下载管理</string>
+    <string name="city_list">城市列表</string>
+
+    <string name="guangdong">广东省</string>
+    <string name="nostras_city">国内城市</string>
+    <string name="allcity">所有城市</string>
+    <string name="current_city">当前城市</string>
+    <string name="offline_download_manager_finish">完成</string>
+    <string name="offline_download_finish">下载完成</string>
+    <string name="offline_download_all">全部下载</string>
+    <string name="offline_stop_all">全部暂停</string>
+    <string name="offline_stop_downlod">暂停下载</string>
+    <string name="offline_restart_downlod">继续下载</string>
+    <string name="offline_delete_map">删除 离线地图(%1$s)</string>
+    <string name="offline_delete">删除</string>
+    <string name="offline_download_nocontent">暂无下载，点击“城市列表”进行下载吧！</string>
+
+    <!-- feedback layout -->
+    <string name="opinion_content_hint">有想法或者疑问，就告诉我吧~</string>
+    <string name="opinion_user_name_hint">请输入您的称呼</string>
+    <string name="opinion_user_phone_hint">请输入您的手机号</string>
+    <string name="feedback_commit">提交反馈</string>
+    <string name="feedback_no_content">还没填写反馈内容呢！</string>
+    <string name="feedback_user">用户：</string>
+    <string name="feedback_phone">手机号：</string>
+    <string name="feedback_content">意见：</string>
+    <string name="feedback_title">意见反馈</string>
+
+    <!-- track activity-->
+    <string name="track_activity_title">轨迹回放</string>
+    <string name="track_info_activity_title">轨迹详情</string>
+    <string name="track_log_activity_title">轨迹日志</string>
+    <string name="track_log_stoptime">停留</string>
+    <string name="track_play_speed_fase">快</string>
+    <string name="track_play_speed_middle">中</string>
+    <string name="track_play_speed_slow">慢</string>
+
+    <!-- about acitvity -->
+    <string name="about_title">关于</string>
+    <string name="app_name_version">车掌控</string>
+    <string name="app_version_string">软件版本</string>
+    <string name="app_time">发布日期</string>
+    <string name="app_official_website">官方网站</string>
+    <string name="app_wechat_search_car">微信查车</string>
+    <string name="app_contact_us">联系我们</string>
+    <string name="app_copyright">Copyright &#169; 2005-2017</string>
+    <string name="app_company_name">广东华盈光达科技有限公司</string>
+
+    <!-- push message -->
+    <string name="push_message_title">系统消息</string>\
+    <string name="no_push_message_data">暂无消息</string>\
+    <!--offline MAP -->
+    <string name="offlinemap_list_search_hint">请输入城市名称或首字母</string>
+
+    <!--alarm log Activity-->
+    <string name="alarm_info_activity_title">警报详情</string>
+    <string name="bottom_select_cancelall">取消全选</string>
+    <string name="bottom_select_null">没有选择类型</string>
+    <string name="no_alarm_log_data">无警报日志</string>
+    <string name="bottom_select_finish">完成（%1$s）</string>
+
+    <!-- operation dialog -->
+    <string name="operation_send_success">指令已发送</string>
+    <string name="operation_pwd_error">密码错误</string>
+    <string name="operation_chenge_success">修改成功</string>
+    <string name="operation_send_message_success">发送成功</string>
+    <string name="operation_error">操作失败</string>
+    <string name="no_operation_error">无操作内容</string>
+
+    <string name="send_message_hint">请输入信息</string>
+    <string name="send_message_title">请输入信息</string>
+    <string name="message_no_content">还没填写信息呢！</string>
+
+
+    <string name="track_total_mileage_str">总里程 %1$skm</string>
+
+    <string name="ctrl_pwd_null">操作密码不能为空</string>
+    <string name="terminal_pwd_null">终端密码不能为空</string>、
+
+    <string name="use_guide">使用指南</string>
+    <string name="account_explain">用户说明</string>
+
+    <!-- maintenance order info -->
+    <string name="commit_status_title">已提交</string>
+    <string name="commit_status_hint">客服会尽快联系您，请耐心等待。</string>
+    <string name="processed_status_title">处理中</string>
+    <string name="processed_status_hint">维修师傅会尽快上门维修，请耐心等待。</string>
+    <string name="finish_status_title">已结束</string>
+    <string name="finish_status_hint">本维修单已维修完毕。</string>
+    <string name="maintenance_order_fault_title">故障描述</string>
+    <string name="order_attachment_title">附件</string>
+    <string name="order_progress_title">进度跟踪</string>
+    <string name="maintenance_order_evaluate_endtiem">结束时间：</string>
+    <string name="maintenance_order_evaluate">服务评价</string>
+    <string name="maintenance_order_look_evaluate_endtiem">查看评价</string>
+    <string name="maintenance_order_delete_order">删除工单</string>
+    <string name="maintenance_order_proposer">报修人</string>
+    <string name="maintenance_order_type">报修方式</string>
+    <string name="maintenance_order_appointment_time">预约时间</string>
+    <string name="maintenance_order_appointment_location">预约地点</string>
+    <string name="maintenance_order_errordescribe">故障描述</string>
+    <string name="create_maintenance_order_ordernumber">工单号：%1$s</string>
+    <string name="maintenance_order_hint_errordescribe">请输入故障描述</string>
+    <string name="maintenance_order_hint_platenumber_color">请选择</string>
+    <string name="creat_maintenance_order">创建报修单</string>
+    <string name="commit">提交</string>
+    <string name="creat_maintenance_order_error_platenumber_null">车牌不能为空</string>
+    <string name="creat_maintenance_order_error_proposer_null">报修人不能为空</string>
+    <string name="creat_maintenance_order_error_contact_number_null">联系电话不能为空</string>
+    <string name="creat_maintenance_order_error_platenumber_color_null">请选择车牌颜色</string>
+    <string name="creat_maintenance_enter_commit">确认提交？</string>
+    <string name="creat_maintenance_enter_commit_hint">提交后无法修改哦</string>
+    <string name="creat_maintenance_commit_success">提交成功</string>
+    <string name="creat_maintenance_commit_success_showlist">查看我的报修单</string>
+    <string name="creat_maintenance_commit_success_hint">您的报修单号为：%1$s\n请耐心等待，客服会尽快联系您。</string>
+
+
+    <string name="maintenance_order_finish">维修已完成</string>
+    <string name="maintenance_order_valuation_hint">—— 请评价一下我们的维修服务吧 ——</string>
+    <string name="fault_str">故障</string>
+    <string name="normal_str">正常</string>
+    <string name="valuation_hint_good_service_attitude">服务态度好</string>
+    <string name="valuation_hint_arrive_on_time">到达准时</string>
+    <string name="valuation_hint_thole">有耐心</string>
+    <string name="valuation_hint_quick_pick">接单速度快</string>
+    <string name="valuation_hint_zeal">热情</string>
+    <string name="valuation_hint_fast_speed">速度快</string>
+    <string name="valuation_other_comment_suggestion">其他意见和建议~</string>
+    <string name="valuation_car_status">写下维修后的车辆状况吧~</string>
+    <string name="valuation_result_title">感谢您的评价</string>
+    <string name="valuation_result_hint">您的评价对于我们服务的提升有\n很大帮助的</string>
+    <string name="string_back">返回</string>
+    <string name="service_valuation">服务评价</string>
+    <string name="service_valuation_time">评价时间</string>
+    <string name="service_text">服务：</string>
+    <string name="valuation_carstatus_reslut">车辆状态：%1$s</string>
+    <string name="valuation_comment_reslut">客户意见</string>
+    <string name="valuation_carstatus_title">车辆状况</string>
+    <string name="valuation_termain_status_reslut">设备状态：%1$s</string>
+    <string name="service_valuation_no_content">没填写任何评价内容</string>
+
+    <string name="maintenance_order_item_nodata">您还没有维修工单哦~</string>
+    <string name="install_order_item_nodata">您还没有安装工单哦~</string>
+    <string name="order_item_nodata">还没有该状态的订单哦~</string>
+    <string name="creat_maintenance_order_now">立即创建报修单</string>
+    <string name="getpicture_to_shoot">拍摄</string>
+    <string name="getpicture_to_photo">从相册选择</string>
+    <string name="enter_to_delete">确认删除？</string>
+    <string name="enter_to_delete_hint">删除后无法查看此单的信息</string>
+
+    <string name="maintenance_order_info">报修单详情</string>
+    <string name="order_info_title">工单详情</string>
+    <string name="maintenance_order_manager">报修管理</string>
+    <string name="install_maintenance_order_manager">装维管理</string>
+    <string name="accept_order">接单</string>
+    <string name="have_maintenance">已维修</string>
+
+    <string name="maintenance_order_status_wait_accept_order">待接单</string>
+    <string name="maintenance_order_status_have_accept_order">已接单</string>
+    <string name="maintenance_order_status_finish_order">已结束</string>
+    <string name="maintenance_order_status_accept_order_hint">请在预约的时间和地点上门维修。</string>
+    <string name="maintenance_order_status_finish_accept_order_hint">此维修单已维修完毕。</string>
+
+    <string name="enter_to_acceptorder">确认接单？</string>
+    <string name="enter_to_acceptorder_hint">接单后无法取消哦</string>
+
+
+    <string name="upload_maintenance_result_analyze">故障分析</string>
+    <string name="upload_maintenance_result_measures">维修措施</string>
+    <string name="upload_maintenance_result">维修结果</string>
+    <string name="upload_maintenance_time">维修日期</string>
+    <string name="upload_maintenance_result_termain_status">设备状态</string>
+    <string name="upload_maintenance_result_enclosure">附件</string>
+    <string name="upload_maintenance_result_title">维修完毕</string>
+    <string name="upload_maintenance_result_recommit">重新上传</string>
+    <string name="upload_maintenance_success">上传成功</string>
+    <string name="upload_maintenance_fail">上传失败</string>
+    <string name="upload_maintenance_commit_success">提交成功</string>
+    <string name="upload_maintenance_commit_success_hint">车辆维修结果已成功上传</string>
+    <string name="upload_maintenance_commit_fail">提交失败</string>
+    
+    <string name="unit_tai">台</string>
+    <string name="add_maintenance_order">+ 创建维修单</string>
+    <string name="order_manager_filtrate">筛选</string>
+    <string name="install_order_info_title">安装单详情</string>
+    <string name="install_order_info_accept_order_hint">接单前确认安装单信息。</string>
+    <string name="install_order_info_have_accept_order_hint">请按要求安排师傅安装车辆。</string>
+    <string name="install_order_info_finish_accept_order_hint">此安装单已安装完毕。</string>
+    <string name="have_finish_install">已安装完毕</string>
+
+    <string name="install_order_time">安装时间</string>
+    <string name="install_order_location">安装地址</string>
+    <string name="install_order_count">安装台数</string>
+    <string name="install_order_type">安装形式</string>
+    <string name="install_contact_phone">联系方式</string>
+    <string name="install_order_car_list">安装车辆列表</string>
+    <string name="install_order_car_list_item_completed">已填</string>
+    <string name="install_order_car_list_item_no_completed">未填</string>
+
+    <string name="enter_to_upload_install_info">确认上传安装信息？</string>
+    <string name="enter_to_end_install_hint">上传成功后此安装单结束</string>
+
+    <!-- terminainfo -->
+
+    <string name="terminainfo_vin">车架号</string>
+    <string name="terminainfo_oldplatenumber">旧车牌</string>
+    <string name="terminainfo_serialnumber">终端序列号</string>
+    <string name="terminainfo_type">终端型号</string>
+    <string name="terminainfo_id">终端ID</string>
+    <string name="terminainfo_simcard">SIM卡号</string>
+    <string name="device_run_status">设备运行情况</string>
+    <string name="terminainfo_location_interval">定位间隔</string>
+    <string name="terminainfo_install_personnel">安装人员</string>
+    <string name="terminainfo_install_date">安装日期</string>
+    <string name="terminainfo_install_situation">安装情况</string>
+    <string name="enter_info_no_error">确认信息无误？</string>
+    <string name="save_enter_commit_hint">保存后无法修改哦</string>
+    <string name="save_string">保存</string>
+    <string name="content_no_null">不能为空</string>
+    <string name="content_error">的内容不符合要求，请重新填写</string>
+    <string name="carcost_update_time">更新时间：%1$s</string>
+    <string name="carcost_platenumber">车牌号码 %1$s</string>
+
+    <!--Car Cost-->
+
+    <string name="car_cost">车辆费用</string>
+    <string name="all_arrears">总欠费（元）</string>
+    <string name="arrears_month">欠费月份（月）</string>
+    <string name="monthly_rent">月租</string>
+    <string name="deposited_amount">预存金额</string>
+    <string name="giftamount">赠送金额</string>
+    <string name="history_arrears">累计历史欠费</string>
+    <string name="current_month_derate">本月减免</string>
+    <string name="current_month_gift">本月赠送</string>
+    <string name="current_charge_monthlyrent">本月实收月租</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+
+    <string name="create_maintenance_order_hint">无法做提交操作,请先创建维修单。</string>
+    <string name="create_maintenance_order_add_picture_hint">无法添加图片,请先创建维修单。</string>
+
+    <string name="install_img">安装图片</string>
+    <string name="create_maintenance_img">故障图片</string>
+    <string name="create_maintenance_result_img">维修图片</string>
+
+    <string name="base_order_status_process">流程中</string>
+    <string name="base_order_status_end">结束</string>
+    <string name="base_order_status_nocommit">未提交</string>
+
+
+    <string name="search">搜索</string>
+
+    <string name="look_info">查看</string>
+    <string name="undownload_image">文件不存在，请到工单详情附件下载</string>
+    <string name="getfile_error">获取文件失败</string>
+
+    <string name="fee_pay">缴费</string>
+    <string name="fee_pay_success">缴费成功</string>
+    <string name="fee_pay_fail">缴费失败</string>
+    <string name="feepay_platenumber">车牌号码</string>
+    <string name="feepay_fee">缴费金额(￥)</string>
+    <string name="feepay_info">缴费明细</string>
+    <string name="feepay_info_hint">请输入缴费明细（如GPS服务费）</string>
+    <string name="no_input_feepay">请输入缴费金额</string>
+    <string name="no_input_feepay_info">请输入缴费明细</string>
+
+
+
+</resources>

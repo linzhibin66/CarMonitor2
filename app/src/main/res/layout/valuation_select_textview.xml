@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/valuation_result_item_layout_select_valuation_text_w"
+    android:layout_height="wrap_content"
+     >
+    <TextView
+        android:id="@+id/maintenance_order_number_value"
+        android:layout_width="@dimen/valuation_result_item_layout_select_valuation_text_w"
+        android:layout_height="@dimen/valuation_result_item_layout_select_valuation_text_h"
+        android:layout_below="@id/maintenance_order_valuation_result_line"
+        android:textSize="@dimen/maintenance_order_info_content_text_size"
+        android:textColor="@color/valuation_result_item_layout_title_text_color"
+        android:background="@drawable/valuation_item_bg_n"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

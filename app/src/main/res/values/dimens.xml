@@ -1,0 +1,313 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_w">360dp</dimen>
+    <dimen name="line_h">0.5dp</dimen>
+
+    <!-- login activity -->
+    <dimen name="login_item_hight">43dp</dimen>
+    <dimen name="login_item_text_size">14sp</dimen>
+    <dimen name="login_item_marginleft">10dp</dimen>
+    <dimen name="login_item_margintop">10dp</dimen>
+    <dimen name="login_item_marginrlght">10dp</dimen>
+    <dimen name="login_item_commit">42dp</dimen>
+    <dimen name="login_item_commit_textsize">16sp</dimen>
+    <dimen name="login_pwd_show_w">21dp</dimen>
+    <dimen name="magin_23">23dp</dimen>
+    <dimen name="magin_30">30dp</dimen>
+
+
+    <!--Main activity -->
+    <dimen name="usericon_wh">29dp</dimen>
+    <dimen name="title_hight">39dp</dimen>
+    <dimen name="magin_10">10dp</dimen>
+    <dimen name="menu_wh">49dp</dimen>
+    <dimen name="search_icon">17dp</dimen>
+    <dimen name="magin_7">7dp</dimen>
+    <dimen name="magin_8">8dp</dimen>
+    <dimen name="magin_28">28dp</dimen>
+    <dimen name="magin_39">39dp</dimen>
+    <dimen name="magin_14">14dp</dimen>
+    <dimen name="search_text">12sp</dimen>
+    <dimen name="main_buttom_wh">36dp</dimen>
+    <!-- marker dialog -->
+    <dimen name="marker_dialog_w">354dp</dimen>
+    <dimen name="marker_dialog_h">170dp</dimen>
+    <dimen name="marker_dialog_w2">349dp</dimen>
+    <dimen name="marker_dialog_h2">173dp</dimen>
+    <dimen name="marker_dialog_marginbutton">7dp</dimen>
+    <dimen name="magin_15">15dp</dimen>
+    <dimen name="magin_16">16dp</dimen>
+    <dimen name="magin_18">18dp</dimen>
+    <dimen name="magin_11">11dp</dimen>
+    <dimen name="magin_13">13dp</dimen>
+    <dimen name="magin_5">5dp</dimen>
+    <dimen name="magin_6">6dp</dimen>
+    <dimen name="magin_26">26dp</dimen>
+    <dimen name="magin_24">24dp</dimen>
+    <dimen name="magin_22">22dp</dimen>
+    <dimen name="magin_3">3dp</dimen>
+    <dimen name="magin_4">4dp</dimen>
+    <dimen name="marker_text_h">19dp</dimen>
+    <dimen name="marker_platenumber_textsize">14sp</dimen>
+    <dimen name="marker_status_textsize">12sp</dimen>
+    <dimen name="marker_address_textsize">12.6sp</dimen>
+    <dimen name="marker_time_textsize">12.6sp</dimen>
+    <dimen name="marker_speed_textsize">11sp</dimen>
+    <dimen name="marker_orientation_wh">32dp</dimen>
+    <dimen name="marker_ctrl_textsize">13sp</dimen>
+    <dimen name="marker_hint_textsize">13sp</dimen>
+
+    <!-- main userMenu -->
+    <dimen name="settings_user_w">280dp</dimen>
+    <dimen name="settings_user_h">136dp</dimen>
+    <dimen name="settings_item_layout_h">269dp</dimen>
+    <dimen name="settings_user_icon_wh">60dp</dimen>
+    <dimen name="magin_83">83dp</dimen>
+    <dimen name="magin_60">60dp</dimen>
+    <dimen name="settings_username_textsize">14sp</dimen>
+    <dimen name="settings_car_count_textsize">12sp</dimen>
+    <dimen name="settings_item_icon_wh">18dp</dimen>
+    <dimen name="settings_list_item_textsize">14sp</dimen>
+    <dimen name="settings_list_item_text_minw">55dp</dimen>
+
+    <!--activity allcarlist -->
+    <dimen name="title_h">57dp</dimen>
+    <dimen name="title_back_img_wh">45dp</dimen>
+    <dimen name="title_back_search_wh">45dp</dimen>
+    <dimen name="title_name_textsize">17sp</dimen>
+    <dimen name="magin_20">20dp</dimen>
+    <dimen name="allcarlist_navigation_bar_h">33dp</dimen>
+    <dimen name="allcarlist_navigation_bar_h2">35.5dp</dimen>
+    <dimen name="allcarlist_navigationtitle_bar_h">29dp</dimen>
+    <dimen name="allcarlist_item_checkbox_wh">45dp</dimen>
+    <dimen name="allcarlist_item_wh">45dp</dimen>
+    <dimen name="allcarlist_item_img_wh">31dp</dimen>
+    <dimen name="allcarlist_item_img_status_wh">16dp</dimen>
+    <dimen name="allcarlist_item_paltenumber_textsize">13sp</dimen>
+    <dimen name="allcarlist_item_status_textsize">11sp</dimen>
+    <dimen name="allcarlist_title_textsize">12sp</dimen>
+    <dimen name="allcarlist_bottom_enter_w">106dp</dimen>
+    <dimen name="allcarlist_bottom_enter_h">33dp</dimen>
+    <dimen name="allcarlist_search_layout_h">28dp</dimen>
+    <dimen name="allcarlist_selectlayout_h">46dp</dimen>
+    <dimen name="allcarlist_select_view_w">93dp</dimen>
+    <dimen name="select_enter_textszie">14sp</dimen>
+    <dimen name="allcar_search_text_size">12sp</dimen>
+
+    <!-- main time Picker dialog -->
+    <dimen name="timepicker_dialog_w">277dp</dimen>
+    <dimen name="timepicker_dialog_h">211dp</dimen>
+    <dimen name="timepicker_dialog_title_h">39dp</dimen>
+    <dimen name="timepicker_dialog_title_textsize">13sp</dimen>
+    <dimen name="timepicker_dialog_enter_h">35dp</dimen>
+    <dimen name="timepicker_dialog_enter_textsize">14sp</dimen>
+    <dimen name="timepicker_dialog_conten_title_h">22dp</dimen>
+    <dimen name="timepicker_dialog_conten_h">25dp</dimen>
+    <dimen name="timepicker_dialog_content_textsize">12sp</dimen>
+    <dimen name="timepicker_enter_textsize">12sp</dimen>
+    <dimen name="timepicker_title_textsize">16sp</dimen>
+    <dimen name="timepicker_enter_textsize_w">68dp</dimen>
+
+    <!-- main search car-->
+    <dimen name="search_history_h">125dp</dimen>
+    <dimen name="search_layout_w">327dp</dimen>
+    <dimen name="search_history_text_h">32dp</dimen>
+    <dimen name="search_history_girdview_item_h">31dp</dimen>
+    <dimen name="search_history_girdview_item_w">100dp</dimen>
+
+    <!-- CarInfo -->
+    <dimen name="carinfo_item_h">45dp</dimen>
+    <dimen name="carinfo_item_icon_w">40dp</dimen>
+    <dimen name="magin_19">19dp</dimen>
+    <dimen name="carinfo_line_h">2dp</dimen>
+    <dimen name="carinfo_textsize">14sp</dimen>
+
+    <!-- setting Activity -->
+    <dimen name="settings_item_h">45dp</dimen>
+    <dimen name="settings_buttom_h">42dp</dimen>
+    <dimen name="settings_loginout_text_size">16sp</dimen>
+    <dimen name="offline_ctrl_h">25dp</dimen>
+    <dimen name="offline_ctrl_w">96dp</dimen>
+    <dimen name="offline_list_item_h">44dp</dimen>
+    <dimen name="offline_list_item_title_h">32dp</dimen>
+    <dimen name="offline_list_item_title_textsize">12sp</dimen>
+    <dimen name="offline_list_item_textsize">14sp</dimen>
+    <dimen name="offline_list_item_size_textsize">13sp</dimen>
+    <dimen name="offline_list_downloading_size_textsize">11sp</dimen>4
+    <dimen name="offline_downloading_text_h">35dp</dimen>
+
+    <!--compact marker layout-->
+    <dimen name="compact_marker_ctrl_item_w">54dp</dimen>
+    <dimen name="compact_marker_ctrl_item_h">36dp</dimen>
+    <dimen name="compact_marker_operation_item_hs">79dp</dimen>
+    <dimen name="compact_marker_operation_item_text_size">10.6sp</dimen>
+    <dimen name="compact_marker_alarm_item_h">43.3dp</dimen>
+    <dimen name="compact_marker_text_size">12.6sp</dimen>
+    <dimen name="compact_marker_buttom_text_size">16sp</dimen>
+    <dimen name="magin_46">46dp</dimen>
+    <dimen name="magin_43">43dp</dimen>
+    <dimen name="magin_41">41dp</dimen>
+
+    <!-- feedback layout -->
+    <dimen name="opinion_content_h">151dp</dimen>
+    <dimen name="opinion_info_item_h">46dp</dimen>
+    <dimen name="opinion_commit_btn_h">43dp</dimen>
+    <dimen name="opinion_contact_hint_text_size">14sp</dimen>
+
+    <!--track activity -->
+
+    <dimen name="buttom_ctrl_play_h">48dp</dimen>
+    <dimen name="track_log_item_h">57dp</dimen>
+    <dimen name="track_log_item_time_text_size">14sp</dimen>
+    <dimen name="track_log_item_adress_text_size">12sp</dimen>
+    <dimen name="track_log_info_platenumber_text_size">13sp</dimen>
+    <dimen name="track_log_info_addres_text_size">13sp</dimen>
+    <dimen name="track_log_info_time_text_size">12sp</dimen>
+    <dimen name="track_log_info_speed_text_size">11sp</dimen>
+
+    <!-- about us activity -->
+
+    <dimen name="icon_layout_h">219dp</dimen>
+    <dimen name="icon_wh">129dp</dimen>
+    <dimen name="about_activity_item_wh">44dp</dimen>
+    <dimen name="magin_33">33dp</dimen>
+    <dimen name="magin_12">12dp</dimen>
+    <dimen name="magin_37">37dp</dimen>
+    <dimen name="company_textsize">11sp</dimen>
+
+    <!-- faq vactivity-->
+    <dimen name="faq_head_h">205dp</dimen>
+    <dimen name="hot_faq_h">29dp</dimen>
+    <dimen name="gridview_item_faq_h">103dp</dimen>
+
+    <!-- push message -->
+    <dimen name="push_message_time_text_size">12sp</dimen>
+    <dimen name="push_message_type_text_size">14sp</dimen>
+    <dimen name="push_message_menu_wh">53dp</dimen>
+    <dimen name="push_message_menu_text_size">15sp</dimen>
+
+    <!-- offline map -->
+    <dimen name="citylist_search_h">34dp</dimen>
+    <dimen name="citylist_search_text_size">12sp</dimen>
+    <dimen name="citylist_task_ctrl_title_h">30dp</dimen>
+    <dimen name="citylist_task_ctrl_item_h">42dp</dimen>
+    <dimen name="citylist_task_ctrl_title_textsize">12sp</dimen>
+    <dimen name="citylist_task_ctrl_item_textsize">14sp</dimen>
+
+
+    <!--alarm log acitvity-->
+    <dimen name="alarm_log_item_name">12.6sp</dimen>
+    <dimen name="alarm_log_item_adress_text_size">11sp</dimen>
+    <dimen name="alarm_log_infowindown_text_size">12sp</dimen>
+    <dimen name="alarm_log_select_item_h">42dp</dimen>
+
+    <!--operation pwd dialog -->
+
+    <dimen name="input_dialog_w">255dp</dimen>
+    <dimen name="input_operation_dialog_h">225dp</dimen>
+    <dimen name="input_operation_cancel_wh">43dp</dimen>
+    <dimen name="input_operation_title_text_size">17sp</dimen>
+    <dimen name="input_operation_fortify_title_text_size">13sp</dimen>
+    <dimen name="magin_36">36dp</dimen>
+    <dimen name="input_operation_pwd_h">32dp</dimen>
+    <dimen name="input_operation_pwd_text_size">14sp</dimen>
+    <dimen name="input_operation_commit_text_size">15sp</dimen>
+    <dimen name="input_operation_result_text_size">15sp</dimen>
+
+    <!--send message Activity-->
+    <dimen name="send_message_h">127dp</dimen>
+
+
+    <!-- ,aomtenance order -->
+    <dimen name="order_list_item_h">107dp</dimen>
+    <dimen name="order_list_item_title_textsize">14sp</dimen>
+    <dimen name="order_list_item_orderstatus_textsize">15sp</dimen>
+    <dimen name="order_list_item_textsize">12sp</dimen>
+    <dimen name="item_interval">5dp</dimen>
+    <dimen name="maintenance_order_info_status_h">67dp</dimen>
+    <dimen name="maintenance_order_info_content_text_size">12sp</dimen>
+    <dimen name="maintenance_order_info_content_title_w">74dp</dimen>
+    <dimen name="maintenance_order_info_base_content_h">141dp</dimen>
+    <dimen name="maintenance_order_fault_title_h">43dp</dimen>
+    <dimen name="maintenance_order_fault_title_text_size">14sp</dimen>
+    <dimen name="maintenance_order_fault_content_text_size">13sp</dimen>
+
+    <dimen name="creat_maintenance_order_picture_ctrl_item_h">48dp</dimen>
+    <dimen name="creat_maintenance_order_picture_ctrl_item_textsixe">17sp</dimen>
+    <dimen name="creat_maintenance_order_title_w">96dp</dimen>
+    <dimen name="creat_maintenance_order_item_h">48dp</dimen>
+    <dimen name="creat_maintenance_order_title_textsize">14sp</dimen>
+    <dimen name="creat_maintenance_order_hint_errordescribe_textsize">12sp</dimen>
+    <dimen name="creat_maintenance_order_errordescribe_h">30dp</dimen>
+    <dimen name="creat_maintenance_order_enter_layout_w">260dp</dimen>
+    <dimen name="creat_maintenance_order_enter_layout_h">124dp</dimen>
+    <dimen name="creat_maintenance_order_enter_title_textsize">17sp</dimen>
+    <dimen name="creat_maintenance_order_enter_title_hint_textsize">13sp</dimen>
+    <dimen name="creat_maintenance_order_enter_ctrl_layout_h">44dp</dimen>
+    <dimen name="creat_maintenance_order_enter_ctrl_text_size">16sp</dimen>
+    <dimen name="creat_maintenance_order_commit_success_text_size">17sp</dimen>
+    <dimen name="creat_maintenance_order_show_order_list_h">41dp</dimen>
+    <dimen name="creat_maintenance_createbuttom_w">86dp</dimen>
+    <dimen name="creat_maintenance_createbuttom_h">27dp</dimen>
+    <dimen name="maintenance_order_finish_textsize">20sp</dimen>
+    <dimen name="maintenance_order_valuation_hint_textsize">13sp</dimen>
+    <dimen name="creat_maintenance_order_show_order_list_textsize">16sp</dimen>
+    <dimen name="valuation_other_comment_suggestion_textsize">12sp</dimen>
+    <dimen name="valuation_result_h">226dp</dimen>
+    <dimen name="valuation_result_w">288dp</dimen>
+    <dimen name="valuation_result_back_ctrl_textsize">15sp</dimen>
+
+    <dimen name="valuation_result_item_layout_title_h">43dp</dimen>
+    <dimen name="valuation_result_item_layout_title_text_size">14sp</dimen>
+    <dimen name="valuation_result_item_layout_other_suggestion_text_size">13sp</dimen>
+    <dimen name="valuation_result_item_layout_select_valuation_text_w">84dp</dimen>
+    <dimen name="valuation_result_item_layout_select_valuation_text_h">28dp</dimen>
+
+    <dimen name="maintenance_order_status_ctrl_button_w">77dp</dimen>
+    <dimen name="maintenance_order_status_ctrl_button_h">33dp</dimen>
+    <dimen name="maintenance_order_info_status_ctrl_button_h">46dp</dimen>
+    <dimen name="maintenance_order_info_status_ctrl_button_textsize">16sp</dimen>
+
+
+    <!--upload maintenance result-->
+
+    <dimen name="upload_maintenance_result_title_w">96dp</dimen>
+    <dimen name="upload_maintenance_result_item_h">48dp</dimen>
+    <dimen name="upload_maintenance_result_enclosure_textsize">13sp</dimen>
+    <dimen name="upload_maintenance_result_dialog_textsize">15sp</dimen>
+
+
+    <dimen name="install_list_item_type_h">17dp</dimen>
+    <dimen name="install_list_item_type_textsize">11sp</dimen>
+
+
+    <dimen name="creat_order_search_platenumber_textsize">11sp</dimen>
+    <dimen name="creat_order_search_platenumber_text_h">42dp</dimen>
+    <dimen name="order_manager_filrate_enter_h">39dp</dimen>
+    <dimen name="install_order_info_item_h">42dp</dimen>
+    <dimen name="install_order_carlist_item_h">43dp</dimen>
+    <dimen name="install_order_carlist_item_textsize">14sp</dimen>
+    <dimen name="install_order_carlist_item_status_text_w">36dp</dimen>
+
+    <dimen name="carcost_titlecontent_h">93dp</dimen>
+    <dimen name="carcost_titlecontent_all_cost_h">37dp</dimen>
+    <dimen name="carcost_titlecontent_all_cost_text_h">18.5dp</dimen>
+    <dimen name="carcost_titlecontent_all_cost_textsize">14dp</dimen>
+    <dimen name="carcost_titlecontent_platenumber_info_text_h">22dp</dimen>
+    <dimen name="carcost_titlecontent_platenumber_info_textsize">12sp</dimen>
+    <dimen name="carcost_item_text_h">42dp</dimen>
+    <dimen name="carcost_item_text_size">13sp</dimen>
+
+    <dimen name="attachment_item_img_w_h">30dp</dimen>
+    <dimen name="attachment_item_textsize">13sp</dimen>
+    <dimen name="attachment_item_time_textsize">12sp</dimen>
+
+
+    <dimen name="feepay_item_h">49dp</dimen>
+    <dimen name="feepay_item_textsize">14sp</dimen>
+    <dimen name="feepay_info">66dp</dimen>
+
+
+</resources>
